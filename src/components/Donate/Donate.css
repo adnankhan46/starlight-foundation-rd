@@ -1,0 +1,321 @@
+.donateCont .heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-top: 70px;
+}
+
+.donateCont .section.section1 {
+  position: relative;
+  height: 100vh;
+  background-image: url("../../images/donate/cover.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #fff;
+  padding: 0 10vw 25vh;
+}
+
+.donateCont .section.section1::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+}
+
+.donateCont .section.section1 .left {
+  z-index: 4;
+}
+
+.donateCont .section.section1 .left .text h1 {
+  font-size: 3rem;
+}
+
+.donateCont .section.section1 .left .text p {
+  margin-top: 0.5em;
+  font-size: 1.1rem;
+}
+
+.donateCont .section.section1 .left .text button {
+  background-color: var(--theme-clr);
+  color: #fff;
+  border: 1px solid var(--theme-clr);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 7px 30px;
+  margin-top: 1em;
+  outline: none;
+  cursor: pointer;
+}
+
+.donateCont .section.section2 {
+  margin: 70px 15vw;
+  padding: 50px;
+  background-color: #f8f8f8;
+}
+
+.donateCont .section.section2 .sectionHeading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.donateCont .section.section2 h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.donateCont .section.section2 .amountsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+}
+
+.donateCont .section.section2 .amountsList .singleAmount {
+  background-color: var(--theme-soft-clr);
+  color: var(--theme-clr);
+  border: 2px solid var(--theme-clr);
+  text-align: center;
+  padding: 10px 35px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.donateCont .section.section2 .amountsList .singleAmount:hover {
+  background-color: var(--theme-clr);
+  color: #fff;
+}
+
+.donateCont .section.section2 .amountsList .singleAmount:not(:first-child) {
+  margin-left: 2em;
+}
+
+.donateCont .section.section3, .donateCont .section.section4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 70px 10vw;
+}
+
+.donateCont .section.section3 .left img, .donateCont .section.section4 .left img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.donateCont .section.section3 .left img.smallImage, .donateCont .section.section4 .left img.smallImage {
+  width: 50%;
+}
+
+.donateCont .section.section3 .right, .donateCont .section.section4 .right {
+  margin-top: 3em;
+}
+
+.donateCont .section.section3 .right .sectionHeading, .donateCont .section.section4 .right .sectionHeading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.donateCont .section.section3 .right p, .donateCont .section.section4 .right p {
+  text-align: left;
+  margin-top: 1em;
+}
+
+.donateCont .section.section5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 70px 10vw;
+}
+
+.donateCont .bottomDonate {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  min-height: 10vh;
+  padding: 20px 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f8f8f8;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.donateCont .bottomDonate h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.donateCont .bottomDonate .amountsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.donateCont .bottomDonate .amountsList .singleAmount {
+  background-color: var(--theme-soft-clr);
+  color: var(--theme-clr);
+  border: 2px solid var(--theme-clr);
+  text-align: center;
+  padding: 5px 35px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.donateCont .bottomDonate .amountsList .singleAmount:hover {
+  background-color: var(--theme-clr);
+  color: #fff;
+}
+
+.donateCont .bottomDonate.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.donateCont .upiFloat {
+  position: fixed;
+  bottom: 2em;
+  left: 2em;
+  z-index: 4;
+  background-color: var(--theme-clr);
+  padding: 10px 30px;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  color: #fff;
+  border: 2px solid var(--theme-clr);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.donateCont .upiFloat:hover {
+  background: none;
+  color: var(--theme-clr);
+}
+
+@media only screen and (max-width: 992px) {
+  .donateCont .heading {
+    font-size: 2rem;
+  }
+  .donateCont .section.section1 {
+    padding: 0 20px 25vh;
+  }
+  .donateCont .section.section1 .left .text h1 {
+    font-size: 2rem;
+  }
+  .donateCont .section.section2 {
+    padding: 70px 20px;
+  }
+  .donateCont .section.section2 .sectionHeading {
+    font-size: 1.8rem;
+  }
+  .donateCont .section.section2 .amountsList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .donateCont .section.section2 .amountsList .singleAmount {
+    width: auto;
+  }
+  .donateCont .section.section2 .amountsList .singleAmount:not(:first-child) {
+    margin: 1.5em 0 0;
+  }
+  .donateCont .section.section3, .donateCont .section.section4 {
+    margin: 70px 20px;
+  }
+  .donateCont .section.section3 .left img.smallImage, .donateCont .section.section4 .left img.smallImage {
+    width: 100%;
+  }
+  .donateCont .section.section3 .right, .donateCont .section.section4 .right {
+    margin-top: 3em;
+  }
+  .donateCont .section.section3 .right .sectionHeading, .donateCont .section.section4 .right .sectionHeading {
+    font-size: 2.2rem;
+  }
+  .donateCont .section.section3 .right p, .donateCont .section.section4 .right p {
+    font-size: 0.9rem;
+  }
+  .donateCont .section.section5 {
+    margin: 70px 20px;
+  }
+  .donateCont .bottomDonate {
+    padding: 15px 10vw;
+  }
+  .donateCont .bottomDonate a:first-child {
+    display: none;
+  }
+  .donateCont .upiFloat {
+    position: static;
+    margin: 0 auto 50px;
+    text-align: center;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    white-space: nowrap;
+  }
+}
+/*# sourceMappingURL=Donate.css.map */

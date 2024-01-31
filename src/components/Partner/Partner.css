@@ -1,0 +1,149 @@
+.partnerCont .section.section1 {
+  position: relative;
+  height: 100vh;
+  background-image: url("../../images/partner/cover.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #fff;
+  padding: 0 10vw 25vh;
+}
+
+.partnerCont .section.section1::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+}
+
+.partnerCont .section.section1 .left {
+  z-index: 4;
+}
+
+.partnerCont .section.section1 .left .text h1 {
+  font-size: 3rem;
+}
+
+.partnerCont .section.section1 .left .text p {
+  margin-top: 0.5em;
+  font-size: 1.1rem;
+}
+
+.partnerCont .section.section1 .left .text button {
+  background-color: var(--theme-clr);
+  color: #fff;
+  border: 1px solid var(--theme-clr);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 7px 30px;
+  margin-top: 1em;
+  outline: none;
+  cursor: pointer;
+}
+
+.partnerCont .section.section2, .partnerCont .section.section3 {
+  padding: 70px 10vw;
+}
+
+.partnerCont .section.section2 .sectionHeading, .partnerCont .section.section3 .sectionHeading {
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.partnerCont .section.section2 .sectionSubheading, .partnerCont .section.section3 .sectionSubheading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.partnerCont .section.section2 form, .partnerCont .section.section3 form {
+  width: 80%;
+  margin: 3em auto 0;
+  text-align: center;
+}
+
+.partnerCont .section.section2 form .formHeading, .partnerCont .section.section3 form .formHeading {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-top: 3.5em;
+}
+
+.partnerCont .section.section2 form .inputGroup, .partnerCont .section.section3 form .inputGroup {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 4em 3em;
+  margin-top: 1.2em;
+}
+
+.partnerCont .section.section2 form .inputGroup input,
+.partnerCont .section.section2 form .inputGroup textarea, .partnerCont .section.section3 form .inputGroup input,
+.partnerCont .section.section3 form .inputGroup textarea {
+  border: none;
+  border-bottom: 2px solid #000;
+  padding: 15px;
+  outline: none;
+}
+
+.partnerCont .section.section2 form .inputGroup textarea, .partnerCont .section.section3 form .inputGroup textarea {
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.partnerCont .section.section2 form .inputGroup.twoInputs, .partnerCont .section.section3 form .inputGroup.twoInputs {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.partnerCont .section.section2 form button, .partnerCont .section.section3 form button {
+  padding: 15px 50px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  margin-top: 2em;
+  outline: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .partnerCont .section.section1 {
+    padding: 0 20px 25vh;
+  }
+  .partnerCont .section.section1 .left .text h1 {
+    font-size: 2rem;
+  }
+  .partnerCont .section.section2, .partnerCont .section.section3 {
+    padding: 50px 20px;
+  }
+  .partnerCont .section.section2 .sectionHeading, .partnerCont .section.section3 .sectionHeading {
+    font-size: 2rem;
+  }
+  .partnerCont .section.section2 .sectionSubheading, .partnerCont .section.section3 .sectionSubheading {
+    font-size: 1rem;
+  }
+  .partnerCont .section.section2 form, .partnerCont .section.section3 form {
+    width: 100%;
+  }
+  .partnerCont .section.section2 form .inputGroup, .partnerCont .section.section3 form .inputGroup {
+    grid-row-gap: 1em;
+    margin-top: 1.2em;
+  }
+  .partnerCont .section.section2 form .inputGroup.twoInputs, .partnerCont .section.section3 form .inputGroup.twoInputs {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=Partner.css.map */

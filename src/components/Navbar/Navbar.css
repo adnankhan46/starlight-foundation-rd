@@ -1,0 +1,199 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  padding: 10px 30px;
+  width: calc(100vw);
+  top: 0;
+  background-color: rgba(53, 31, 1, 0.45);
+  -webkit-backdrop-filter: blur(13px);
+  backdrop-filter: blur(13px);
+  min-height: 12vh;
+  z-index: 5;
+}
+
+.navbar .navbarLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.navbar .navbarLeft h3 {
+  color: #fff;
+  white-space: nowrap;
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+.navbar .navbarRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbarRight .navLink {
+  font-size: 0.95rem;
+}
+
+.navbar .navbarRight .navLink a {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+.navbar .navbarRight .donate-nav a {
+  /* border: 2px solid rgb(60, 255, 0); */
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.95rem;
+  background-color: #FF9800;
+  color: black;
+  margin: 10px 18px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+.navbar .navbarRight .donate-nav a:hover {
+  background-color: #c77700;
+  color: black;
+}
+.nav-donate-btn a{
+  display: none;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .navbarRight .navLink.hasDropdown {
+  position: relative;
+}
+
+.navbar .navbarRight .navLink.hasDropdown > a {
+  cursor: pointer;
+}
+
+.navbar .navbarRight .navLink.hasDropdown > a::after {
+  content: "\f0d7";
+  font-family: "FontAwesome";
+  color: #fff;
+  margin-left: 0.3em;
+}
+
+.navbar .navbarRight .navLink.hasDropdown .dropdownMenu {
+  position: absolute;
+  top: 1.7em;
+  left: 0;
+  background-color: #fff;
+  border-radius: 7px;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.navbar .navbarRight .navLink.hasDropdown .dropdownMenu ul {
+  list-style-type: none;
+}
+
+.navbar .navbarRight .navLink.hasDropdown .dropdownMenu ul li {
+  padding: 10px;
+}
+
+.navbar .navbarRight .navLink.hasDropdown .dropdownMenu ul li a {
+  color: #000;
+  font-size: 0.85rem;
+}
+
+.navbar .navbarRight .navLink:hover.hasDropdown .dropdownMenu {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.navbar .navbarRight .navLink:not(:first-child) {
+  margin-left: 30px;
+}
+
+.navbar .menuHamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-donate-btn a{
+    text-decoration: none;
+    display: block;
+    font-family: Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.95rem;
+  background-color: #FF9800;
+  color: black;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  }
+
+  .navbar .navbarRight .donate-nav a{
+    margin: 0;
+    padding: 8px 112px;
+  }
+  .navbar {
+    padding: 10px 20px;
+  }
+  .navbar .navbarLeft h3 {
+    display: none;
+  }
+  .navbar .navbarRight {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: -100vw;
+    background-color: #000;
+    padding: 30vh 50px;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+  .navbar .navbarRight .navLink:not(:first-child) {
+    margin-left: 0;
+  }
+  .navbar .navbarRight.true {
+    right: 0;
+  }
+  .navbar .menuHamburger {
+    display: block;
+    z-index: 6;
+  }
+  .navbar .menuHamburger i {
+    color: #fff !important;
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

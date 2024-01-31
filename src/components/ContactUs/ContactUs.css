@@ -1,0 +1,255 @@
+.contactUsCont .section {
+  min-height: 100vh;
+}
+
+.contactUsCont .section.section1 {
+  position: relative;
+  background-image: url("../../images/contact-us/cover.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3em;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 15vh 8vw 5vh;
+}
+
+.contactUsCont .section.section1::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+}
+
+.contactUsCont .section.section1 .left {
+  z-index: 4;
+  text-align: center;
+}
+
+.contactUsCont .section.section1 .left h1 {
+  font-size: 3.5rem;
+}
+
+.contactUsCont .section.section1 .left p {
+  margin-top: 2em;
+}
+
+.contactUsCont .section.section1 .right {
+  z-index: 4;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.contactUsCont .section.section1 .right form {
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.contactUsCont .section.section1 .right form .formHeading {
+  text-align: left;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.contactUsCont .section.section1 .right form .inputGroup input,
+.contactUsCont .section.section1 .right form .inputGroup textarea {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding: 15px 25px;
+  outline: none;
+}
+
+.contactUsCont .section.section1 .right form .inputGroup input::-webkit-input-placeholder,
+.contactUsCont .section.section1 .right form .inputGroup textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.contactUsCont .section.section1 .right form .inputGroup input:-ms-input-placeholder,
+.contactUsCont .section.section1 .right form .inputGroup textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+.contactUsCont .section.section1 .right form .inputGroup input::-ms-input-placeholder,
+.contactUsCont .section.section1 .right form .inputGroup textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+.contactUsCont .section.section1 .right form .inputGroup input::placeholder,
+.contactUsCont .section.section1 .right form .inputGroup textarea::placeholder {
+  color: #fff;
+}
+
+.contactUsCont .section.section1 .right form .inputGroup textarea {
+  border: 1px solid #fff;
+  border-radius: 7px;
+  margin-top: 1em;
+}
+
+.contactUsCont .section.section1 .right form .inputGroup button {
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px 45px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.contactUsCont .section.section1 .right form .inputGroup button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
+
+.contactUsCont .section.section1 .right form .inputGroup.items2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+.contactUsCont .section.section1 .right form .inputGroup:not(:first-child) {
+  margin-top: 1.5em;
+}
+
+.contactUsCont .section.section2 {
+  padding: 70px 15vw 0;
+}
+
+.contactUsCont .section.section2 .sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.contactUsCont .section.section2 .faq_part {
+  margin-bottom: 0;
+  width: 100%;
+  color: #000;
+}
+
+.contactUsCont .section.section2 .faq_part .faqs {
+  width: 100%;
+}
+
+.contactUsCont .section.section2 .faq_part .faqs .faq {
+  margin: 15px 5px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.contactUsCont .section.section2 .faq_part .faqs .faq .faq-question {
+  position: relative;
+  font-size: 1.3rem;
+  padding-right: 80px;
+  font-weight: 500;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.contactUsCont .section.section2 .faq_part .faqs .faq .faq-question::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-image: url("./arrow-down-mint.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.contactUsCont .section.section2 .faq_part .faqs .faq .faq-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.contactUsCont .section.section2 .faq_part .faqs .faq .faq-answer a {
+  color: var(--theme-clr);
+}
+
+.contactUsCont .section.section2 .faq_part .faqs .faq.open .faq-question {
+  margin-bottom: 15px;
+}
+
+.contactUsCont .section.section2 .faq_part .faqs .faq.open .faq-question::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.contactUsCont .section.section2 .faq_part .faqs .faq.open .faq-answer {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 992px) {
+  .contactUsCont .section.section1 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3em;
+    padding: 15vh 20px 5vh;
+  }
+  .contactUsCont .section.section1 .left h1 {
+    font-size: 2rem;
+  }
+  .contactUsCont .section.section1 .right form {
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    text-align: center;
+  }
+  .contactUsCont .section.section1 .right form .formHeading {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .contactUsCont .section.section1 .right form .inputGroup input,
+  .contactUsCont .section.section1 .right form .inputGroup textarea {
+    padding: 15px;
+  }
+  .contactUsCont .section.section1 .right form .inputGroup.items2 {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .contactUsCont .section.section1 .right form .inputGroup:not(:first-child) {
+    margin-top: 1.2em;
+  }
+  .contactUsCont .section.section2 {
+    padding: 70px 20px;
+  }
+  .contactUsCont .section.section2 .sectionTitle {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=ContactUs.css.map */

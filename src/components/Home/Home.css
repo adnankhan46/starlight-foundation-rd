@@ -1,0 +1,436 @@
+.homeCont .section {
+  overflow: hidden;
+}
+
+.homeCont .section.section1 {
+  height: 100vh;
+  position: relative;
+  background: #180f01;
+  background-image: url("../../images/home/cover.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 0 2vw;
+}
+
+.homeCont .section.section1::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background-image: linear-gradient( rgba(0, 0, 0, 0.785),rgba(0, 0, 0, 0.7));
+  top: 0;
+  left: 0;
+}
+
+.homeCont .section.section1 .left {
+  z-index: 4;
+  text-align: left;
+   text-align: center;/* For Center*/
+}
+
+.homeCont .section.section1 .left h1 {
+  padding: 0 8vw 0 0;
+   padding: 0 8vw;/* For Center */
+  text-align: left;
+   text-align: center; /*For Center */
+  font-size: 2rem;
+}
+
+.homeCont .section.section1 .left p {
+  /* padding: 0 14vw 0 0; */
+   padding: 0 14vw; /*For Center */
+  margin-top: 1.5em;
+  color: #ffffff;
+}
+.donate-btn {
+  border: 2px solid #FF9800;
+  border-radius: 16px;
+  padding: 12px 16px;
+  margin-top: 2em;
+  font-size: 1rem;
+  color: white;
+  background: transparent;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  font-weight: 400;
+}
+.donate-btn:hover {
+  color: white;
+  background: #FF9800;
+}
+
+.homeCont .section.whatWeDo {
+  padding: 70px 12vw;
+}
+
+.homeCont .section.whatWeDo .owl-theme {
+  display: flex ;
+  flex-direction: row ;
+}
+
+@media only screen and (max-width: 768px) {
+  .homeCont .section.whatWeDo .owl-theme {
+    flex-direction: column; /* Vertical layout for screens with a width up to 768px */
+  }
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 56px;
+  color: #000; /* Set arrow color */
+  width: 50px;
+  height: 100px;
+}
+
+.owl-prev {
+  left: 5px; /* Adjust the left position as needed */
+  width: 50px;
+  height: 100px;
+}
+
+.owl-next {
+  right: 10px; /* Adjust the right position as needed */
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  color: #ff0000; /* Set arrow color on hover */
+}
+
+.homeCont .section.whatWeDo .title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.homeCont .section.whatWeDo .singleDo {
+  border-radius: 10px;
+  border-bottom: 5px solid #000;
+  -webkit-box-shadow: 0 0.4rem 1rem -0.01rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.4rem 1rem -0.01rem rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+}
+
+.homeCont .section.whatWeDo .singleDo .image {
+  padding: 0 15px;
+}
+
+.homeCont .section.whatWeDo .singleDo .image img {
+  width: 100%;
+}
+
+.homeCont .section.whatWeDo .singleDo .doTitle {
+  text-align: center;
+  margin-top: 2em;
+  font-weight: 500;
+}
+
+.homeCont .section.whatWeDo .singleDo.pink {
+  border-bottom-color: #e5276a;
+}
+
+.homeCont .section.whatWeDo .singleDo.blue {
+  border-block-color: #21b7b9;
+}
+
+.homeCont .section.whatWeDo .singleDo.purple {
+  border-block-color: #a944a5;
+}
+
+.homeCont .section.whatWeDo .singleDo.orange {
+  border-block-color: #f6910f;
+}
+
+.homeCont .section.section5 {
+  background-color: #f7f7f7;
+  margin: 2em 0;
+  padding: 70px 10vw;
+}
+
+.homeCont .section.section5 .sectionTitle {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.homeCont .section.section5 .impactsList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1;
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1em 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.homeCont .section.section5 .impactsList .singleImpact {
+  text-align: center;
+}
+
+.homeCont .section.section5 .impactsList .singleImpact .impactTitle {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.homeCont .section.section5 .impactsList .singleImpact .impactCircle {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-box-shadow: 17px 17px 34px #d9d9d9, -17px -17px 34px #ffffff;
+          box-shadow: 17px 17px 34px #d9d9d9, -17px -17px 34px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  margin-top: 3em;
+  padding: 10px;
+}
+
+.homeCont .section.section5 .impactsList .singleImpact .impactCircle .impactIcon {
+  position: absolute;
+  background-color: var(--theme-clr);
+  color: #fff;
+  padding: 20px;
+  font-size: 1.5rem;
+  top: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeCont .section.section5 .impactsList .singleImpact .impactCircle .impactNumber {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.homeCont .section.section5 .impactsList .singleImpact .impactCircle .impactText {
+  font-size: 0.8rem;
+  margin-top: 0.5em;
+  color: #616161;
+}
+
+.homeCont .section.section6 {
+  padding: 70px 15vw;
+}
+
+.homeCont .section.section6 .sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.homeCont .section.section6 .owl-theme .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeCont .section.section7 {
+  padding: 70px 15vw;
+}
+
+.homeCont .section.section7 .sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.homeCont .section.section7 .faq_part {
+  margin-bottom: 3em;
+  width: 100%;
+  color: #000;
+}
+
+.homeCont .section.section7 .faq_part .faqs {
+  width: 100%;
+}
+
+.homeCont .section.section7 .faq_part .faqs .faq {
+  margin: 15px 5px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.homeCont .section.section7 .faq_part .faqs .faq .faq-question {
+  position: relative;
+  font-size: 1.3rem;
+  padding-right: 80px;
+  font-weight: 500;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.homeCont .section.section7 .faq_part .faqs .faq .faq-question::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-image: url("./arrow-down-mint.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.homeCont .section.section7 .faq_part .faqs .faq .faq-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.homeCont .section.section7 .faq_part .faqs .faq .faq-answer a {
+  color: var(--theme-clr);
+}
+
+.homeCont .section.section7 .faq_part .faqs .faq.open .faq-question {
+  margin-bottom: 15px;
+}
+
+.homeCont .section.section7 .faq_part .faqs .faq.open .faq-question::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.homeCont .section.section7 .faq_part .faqs .faq.open .faq-answer {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 992px) {
+  .homeCont .section {
+    min-height: 100%;
+  }
+  .homeCont .section.section1 {
+    padding: 0 15px;
+  }
+  .homeCont .section.section1 .left h1 {
+    font-size: 2rem;
+  }
+  .homeCont .section.section1 .left p {
+    font-size: 0.9rem;
+  }
+  .homeCont .section.section2 .slide, .homeCont .section.section3 .slide, .homeCont .section.section4 .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homeCont .section.section2 .slide .slideContent, .homeCont .section.section3 .slide .slideContent, .homeCont .section.section4 .slide .slideContent {
+    margin: 2.5em 15px 0;
+  }
+  .homeCont .section.section2 .slide .slideContent .slideText, .homeCont .section.section3 .slide .slideContent .slideText, .homeCont .section.section4 .slide .slideContent .slideText {
+    margin-top: 0.5em;
+  }
+  .homeCont .section.section2 .slide .slideImage, .homeCont .section.section3 .slide .slideImage, .homeCont .section.section4 .slide .slideImage {
+    border: none;
+    height: 50vh;
+    width: calc(0.75 * 50vh);
+    border-radius: 10px;
+    margin-top: 3em;
+  }
+  .homeCont .section.section2:nth-child(odd) .slide, .homeCont .section.section3:nth-child(odd) .slide, .homeCont .section.section4:nth-child(odd) .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homeCont .section.section2:nth-child(odd) .slide .slideImage, .homeCont .section.section3:nth-child(odd) .slide .slideImage, .homeCont .section.section4:nth-child(odd) .slide .slideImage {
+    border-radius: 10px;
+    border: none;
+  }
+  .homeCont .section.section5 {
+    padding: 70px 20px;
+  }
+  .homeCont .section.section6 {
+    padding: 50px 20px;
+    min-height: 0;
+  }
+  .homeCont .section.section7 {
+    padding: 50px 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .homeCont .section.section5 .impactsList {
+    -ms-grid-columns: 1fr 6;
+        grid-template-columns: repeat(6, 1fr);
+  }
+  .homeCont .section.section5 .impactsList .singleImpact {
+    grid-column: span 2;
+  }
+  .homeCont .section.section5 .impactsList .singleImpact:last-child:nth-child(3n - 1) {
+    grid-column-end: -2;
+  }
+  .homeCont .section.section5 .impactsList .singleImpact:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 4;
+  }
+  .homeCont .section.section5 .impactsList .singleImpact:last-child:nth-child(3n - 2) {
+    grid-column-end: 5;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

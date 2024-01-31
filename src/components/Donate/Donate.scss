@@ -1,0 +1,312 @@
+.donateCont {
+  .heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-top: 70px;
+  }
+
+  .section {
+    &.section1 {
+      position: relative;
+      height: 100vh;
+      background-image: url("../../images/donate/cover.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      color: #fff;
+      padding: 0 10vw 25vh;
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        top: 0;
+        left: 0;
+      }
+
+      .left {
+        z-index: 4;
+
+        .text {
+          h1 {
+            font-size: 3rem;
+          }
+
+          p {
+            margin-top: 0.5em;
+            font-size: 1.1rem;
+          }
+
+          button {
+            background-color: var(--theme-clr);
+            color: #fff;
+            border: 1px solid var(--theme-clr);
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 7px 30px;
+            margin-top: 1em;
+            outline: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &.section2 {
+      margin: 70px 15vw;
+      padding: 50px;
+      background-color: #f8f8f8;
+
+      .sectionHeading {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      h4 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      .amountsList {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+
+        .singleAmount {
+          background-color: var(--theme-soft-clr);
+          color: var(--theme-clr);
+          border: 2px solid var(--theme-clr);
+          text-align: center;
+          padding: 10px 35px;
+          width: min-content;
+          border-radius: 5px;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 1.1rem;
+          transition: 0.3s all ease;
+
+          &:hover {
+            background-color: var(--theme-clr);
+            color: #fff;
+          }
+
+          &:not(:first-child) {
+            margin-left: 2em;
+          }
+        }
+      }
+    }
+
+    &.section3,
+    &.section4 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 70px 10vw;
+
+      .left {
+        img {
+          width: 100%;
+          border-radius: 20px;
+
+          &.smallImage {
+            width: 50%;
+          }
+        }
+      }
+
+      .right {
+        margin-top: 3em;
+
+        .sectionHeading {
+          font-size: 2.5rem;
+          font-weight: 600;
+          text-align: center;
+        }
+
+        p {
+          text-align: left;
+          margin-top: 1em;
+        }
+      }
+    }
+
+    &.section5 {
+      display: flex;
+      flex-direction: column;
+      margin: 70px 10vw;
+    }
+  }
+
+  .bottomDonate {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    min-height: 10vh;
+    padding: 20px 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    transition: 0.3s all ease;
+
+    h4 {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 1em;
+    }
+
+    .amountsList {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .singleAmount {
+        background-color: var(--theme-soft-clr);
+        color: var(--theme-clr);
+        border: 2px solid var(--theme-clr);
+        text-align: center;
+        padding: 5px 35px;
+        width: min-content;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: 0.3s all ease;
+
+        &:hover {
+          background-color: var(--theme-clr);
+          color: #fff;
+        }
+      }
+    }
+
+    &.show {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  .upiFloat {
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+    z-index: 4;
+    background-color: var(--theme-clr);
+    padding: 10px 30px;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    color: #fff;
+    border: 2px solid var(--theme-clr);
+    // box-shadow: 10px 10px 40px #504f4f;
+    transition: 0.3s all ease;
+
+    &:hover {
+      background: none;
+      color: var(--theme-clr);
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .donateCont {
+    .heading {
+      font-size: 2rem;
+    }
+
+    .section {
+      &.section1 {
+        padding: 0 20px 25vh;
+
+        .left {
+          .text {
+            h1 {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+
+      &.section2 {
+        padding: 70px 20px;
+
+        .sectionHeading {
+          font-size: 1.8rem;
+        }
+
+        .amountsList {
+          flex-direction: column;
+
+          .singleAmount {
+            width: auto;
+
+            &:not(:first-child) {
+              margin: 1.5em 0 0;
+            }
+          }
+        }
+      }
+
+      &.section3,
+      &.section4 {
+        margin: 70px 20px;
+
+        .left {
+          img {
+            &.smallImage {
+              width: 100%;
+            }
+          }
+        }
+
+        .right {
+          margin-top: 3em;
+
+          .sectionHeading {
+            font-size: 2.2rem;
+          }
+
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      &.section5 {
+        margin: 70px 20px;
+      }
+    }
+
+    .bottomDonate {
+      padding: 15px 10vw;
+
+      a {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+
+    .upiFloat {
+      position: static;
+      margin: 0 auto 50px;
+      text-align: center;
+      width: min-content;
+      white-space: nowrap;
+    }
+  }
+}
