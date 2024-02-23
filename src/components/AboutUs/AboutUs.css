@@ -1,1 +1,177 @@
-/* No CSS *//*# sourceMappingURL=AboutUs.css.map */
+/* No CSS */
+/*# sourceMappingURL=AboutUs.css.map */
+
+.aboutUsCont {
+    /* border: 2px solid green; */
+    padding: 120px 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.aboutUsCont .section1{
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 0 10vw 4vh;
+}
+
+.aboutUsCont .section1 h1 {
+    font-size: 2.5rem;
+}
+
+.aboutUsCont .section1 p {
+    margin-top: 2em;
+    font-size: 1rem;
+}
+
+.aboutUsCont .section1 .teamPhoto{
+    display: flex;
+    gap: 2rem;
+    align-items: center; 
+}
+.aboutUsCont .section1 h1.teamphoto{
+    font-size: 2rem;
+    margin-top: 24px;
+}
+.aboutUsCont .section1 .teamImg{
+    width: 50%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+.divider-line{
+    margin-top: 36px;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutUsCont .section1 {
+        padding: 0 4vw; 
+    }
+    
+    .aboutUsCont .section1 .teamPhoto {
+        flex-direction: column;
+        gap: 1rem; 
+    }
+    
+    .aboutUsCont .section1 .teamImg {
+        width: 100%; 
+        margin-bottom: 1rem; 
+    }
+}
+
+
+.aboutUsCont .section2-a{
+    /* border: 2px solid saddlebrown; */
+    padding: 0 10vw 4vh;
+    text-align: center;
+    background: #f8f8f8;
+    padding: 30px;
+}
+.aboutUsCont .section2-a h1{
+   font-size: 2.5rem;
+}
+.aboutUsCont .section2-a p{
+    font-size: 1rem;
+}
+
+.aboutUsCont .section2-b{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.aboutUsCont .section2-b h1{
+    font-size: 2.5rem;
+}
+.aboutUsCont .section2-b .coreValuesItems{
+    display: flex;
+    flex-direction: row;
+    gap: 14rem;
+    align-items: center;
+    margin-top: 30px;
+}
+.aboutUsCont .section2-b .coreValuesItems i{
+    font-size: 3.5rem;
+    color: #FF9800;
+}
+.aboutUsCont .section2-b .coreValuesItems p{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.aboutUsCont .section2-b .coreValuesItems .coreValuesItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 14px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .aboutUsCont .section2-b .coreValuesItems{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+    }
+    .aboutUsCont .section2-b .coreValuesItems .coreValuesItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* ########################################################  Section 3 */
+
+.section3 {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section3 h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Owl Carousel Styles */
+.owl-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Single Testimonial Styles */
+.singleDo {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    background: #f8f8f8;
+    border-radius: 16px;
+}
+
+.singleDo p {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    margin-bottom: 10px;
+}
+
+.singleDo .doTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.owl-prev,
+.owl-next {
+    font-size: 2rem;
+    color: #333;
+}
+
+  
+

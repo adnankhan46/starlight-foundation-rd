@@ -6,6 +6,8 @@ import AboutUs from "./AboutUs/AboutUs";
 import ContactUs from "./ContactUs/ContactUs";
 import Volunteer from "./Volunteer/Volunteer";
 import Donate from "./Donate/Donate";
+import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
+import TermsConditions from "./Terms&Conditions/TermsConditions";
 import OurTeam from "./OurTeam/OurTeam";
 import Partner from "./Partner/Partner";
 import ScrollToTop from "./ScrollToTop";
@@ -37,6 +39,8 @@ const Main = () => {
         <Route exact path="/donate" component={Donate} />
         {/* <Route exact path="/team" component={OurTeam} /> */}
         <Route exact path="/partner" component={Partner} />
+        <Route exact path="/privacypolicy" component={PrivacyPolicy} />
+        <Route exact path="/terms&conditions" component={TermsConditions} />
         <Footer />
       </Router>
     </React.Fragment>

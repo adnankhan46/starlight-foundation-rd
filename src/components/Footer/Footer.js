@@ -2,8 +2,6 @@ import React from "react";
 import "./Footer.css";
 import WhatsAppLogo from "../../images/logos/whatsapp.png";
 import Certificate from "../../Registration Certificate.pdf";
-import Policy from "../../Privacy Policy.pdf";
-import TnC from "../../Terms & Conditions.pdf";
 import Logo from "../../images/logos/logo-theme.png";
 
 const Footer = () => {
@@ -101,8 +99,8 @@ const Footer = () => {
         </div>
         <div className="footerBottom">
           &copy; 2023 Starlight Foundation. All rights reserved. &emsp;|&emsp;
-          <a href="./Privacy Policy.pdf">Privacy Policy</a>&emsp;|&emsp;
-          <a href="./Terms & Conditions.pdf">Terms and Conditions</a>
+          <a href="/privacypolicy">Privacy Policy</a>&emsp;|&emsp;
+          <a href="/terms&conditions">Terms and Conditions</a>
         </div>
       </footer>
     </React.Fragment>

@@ -154,7 +154,7 @@
 }
 
 .homeCont .section.whatWeDo .singleDo.orange {
-  border-block-color: #f6910f;
+  border-block-color: #FF9800;
 }
 
 .homeCont .section.section5 {
@@ -252,7 +252,7 @@
 .homeCont .section.section5 .impactsList .singleImpact .impactCircle .impactText {
   font-size: 0.8rem;
   margin-top: 0.5em;
-  color: #616161;
+  color: #FF9800;
 }
 
 .homeCont .section.section6 {

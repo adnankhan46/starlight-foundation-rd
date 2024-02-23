@@ -1,0 +1,33 @@
+.ppcontent{
+    /* border: 2px solid red; */
+    padding: 120px 10vw;
+}
+.ppcontent h2{
+    /* border: 2px solid beige; */
+    font-size: 1.5rem;
+}
+.ppcontent p.updatedTime{
+    /* border: 2px solid beige; */
+    color: #616161;
+    padding-top: 1rem;    
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.ppcontent .pp-intro p{
+    padding-top: 1rem;
+    font-size: 0.85rem;
+}
+
+.ppcontent .pp-middle-content .m1 h4{
+    padding-top: 1.8rem;
+    font-size: 1rem;
+}
+.ppcontent .pp-middle-content .m1 p{
+    padding-top: 1rem;
+    font-size: 0.85rem;
+}
+.ppcontent .pp-middle-content .m1 ul li{
+    padding-top: 1rem;
+    font-size: 0.85rem;
+}

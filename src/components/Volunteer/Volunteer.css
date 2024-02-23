@@ -87,7 +87,7 @@
 .volunteerCont .section.section2 .left .text .values {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr,2);
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 2em;
   -webkit-box-pack: center;
@@ -107,7 +107,7 @@
 .volunteerCont .section.section3 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr,2);
       grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   -webkit-box-align: center;
@@ -196,7 +196,7 @@
     margin-bottom: 2em;
   }
   .volunteerCont .section.section2 .left .text .values {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr,1);
         grid-template-columns: repeat(1, 1fr);
     grid-gap: 5em;
   }
@@ -207,7 +207,7 @@
     margin-top: 1.5em;
   }
   .volunteerCont .section.section3 {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr,1);
         grid-template-columns: repeat(1, 1fr);
     grid-gap: 4em;
     padding: 5vh 20px;

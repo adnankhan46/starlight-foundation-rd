@@ -1,0 +1,29 @@
+.tccontent{
+    /* border: 2px solid blueviolet; */
+    padding: 120px 10vw;
+}
+.tccontent h2{
+    font-size: 1.5rem;
+}
+
+.tccontent p.updatedTime{
+    color: #616161;
+    padding-top: 1rem;    
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tccontent .tc-intro p{
+    padding-top: 1rem;
+    font-size: 0.85rem;
+}
+.tccontent .tc-intro p:last-child{
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.tccontent .tc-lists ul li{
+    padding-top: 1rem;
+    font-size: 0.85rem;
+}
