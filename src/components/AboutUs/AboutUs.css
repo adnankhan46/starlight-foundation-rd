@@ -87,7 +87,7 @@
 .aboutUsCont .section2-b .coreValuesItems{
     display: flex;
     flex-direction: row;
-    gap: 14rem;
+    gap: 5rem;
     align-items: center;
     margin-top: 30px;
 }
@@ -95,13 +95,17 @@
     font-size: 3.5rem;
     color: #FF9800;
 }
-.aboutUsCont .section2-b .coreValuesItems p{
+.aboutUsCont .section2-b .coreValuesItems h1{
     font-size: 1.4rem;
     font-weight: 500;
 }
+.aboutUsCont .section2-b .coreValuesItems p{
+    font-size: 1rem;
+    margin-top: 12px;
+}
 .aboutUsCont .section2-b .coreValuesItems .coreValuesItem{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background: #f8f8f8;
     padding: 30px;

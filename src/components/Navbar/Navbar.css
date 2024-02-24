@@ -68,10 +68,10 @@
   border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.2s ease-in;
+  transition: 0.2s ease;
 }
 .navbar .navbarRight .donate-nav a:hover {
-  background-color: #c77700;
+  box-shadow: 0 0 0 .3rem rgba(253,215,50,.4);
   color: black;
 }
 .nav-donate-btn a{

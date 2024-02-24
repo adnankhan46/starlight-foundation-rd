@@ -18,7 +18,7 @@ const Navbar = () => {
             <a href="/aboutus">About Us</a>
           </div>
           <div className="navLink">
-            <a href="/aboutus">Why Children</a>
+            <a href="/whychildren">Why Children</a>
           </div>
           <div className="navLink">
             <a href="/aboutus">Our Projects</a>
@@ -37,6 +37,7 @@ const Navbar = () => {
             <a href="/contactus">Contact Us</a>
           </div>
           <div className="donate-nav">
+          
             <a href="/donate">DONATE</a>
   </div>
           {/* <div className="navLink hasDropdown">

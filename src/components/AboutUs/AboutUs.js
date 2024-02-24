@@ -56,15 +56,20 @@ const AboutUs = () => {
 
                         <div className="coreValuesItem">
                             <i className="fas fa-star"></i>
-                            <p>Social Equality</p>
+                            <h1>Social Equality</h1>
+                            <p>We are a political, we give respect to all religion and we do not discriminant on caste, oolour, orientation or age
+                            . We consider all our team members equal</p>
                         </div>
                         <div className="coreValuesItem">
                             <i className="fas fa-star"></i>
-                            <p>Collaboration</p>
+                            <h1>Collaboration</h1>
+                            <p>We achieve more when we collaborate and all work together.
+                             Starlight always try to collaborate within the organisation and are always open for outside collaboration</p>
                         </div>
                         <div className="coreValuesItem">
                             <i className="fas fa-star"></i>
-                            <p>Integrity</p>
+                            <h1>Integrity</h1>
+                            <p>We build trust of our partners, donors and volunteers through responsible action and Our honest relationship</p>
                         </div>
 
 

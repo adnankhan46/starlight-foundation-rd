@@ -72,63 +72,72 @@ const Home = () => {
           <div className="right">
           </div>
         </div>
+       
         <div className="section whatWeDo">
           <h2 className="title">What We Do</h2>
           <OwlCarousel
             className="owl-theme"
-            nav={true}
-            items={4}
+            items={3}
             margin={40}
-            autoplay={true}
-            autoplayTimeout={2000}
+            autoplay={false}
             autoplayHoverPause={true}
-            loop={true}
+            loop={false}
             dots={false}
             responsive={{
               0: {
                 items: 1,
-                margin: 50,
-                nav: true
+                margin: 40,
+                
               },
               600: {
                 items: 2,
-                nav: true
+                
               },
               768: {
                 items: 3,
                 margin: 40,
-                nav: true
+                
               },
               1400: {
-                items: 4,
-                nav: true
+                items: 3,
+                
               },
             }}
           >
             <div className="singleDo pink">
               <div className="image">
-                 <img src="./assets/images/home/education.gif" /> 
+                 <img className="pinkImage" src="./assets/images/home/education.gif" /> 
               </div>
               <h4 className="doTitle">Education</h4>
+              <div className="hiddenData">
+            <p>  Ensuring that children go to school and complete their education</p>
+            <a href='whychildren'>Know More</a>
+              </div>
             </div>
-            <div className="singleDo orange">
+            <div className="singleDo purple">
               <div className="image">
                 <img src="./assets/images/home/health-and-nutrition.gif" />
               </div>
               <h4 className="doTitle">Nutrition & Healthcare</h4>
+              <div className="hiddenData">
+            <p>  Ensuring that children go to school and complete their education</p>
+            <a href='whychildren'>Know More</a>
+              </div>
             </div>
+
             <div className="singleDo blue">
               <div className="image">
                 <img src="./assets/images/home/child-participation.gif" />
               </div>
               <h4 className="doTitle">Menstural Hygine Management</h4>
-            </div>
-            <div className="singleDo purple">
-              <div className="image">
-                <img src="./assets/images/home/safety-and-protection.gif" />
+              <div className="hiddenData">
+            <p>  Ensuring that children go to school and complete their education</p>
+            <a href='whychildren'>Know More</a>
               </div>
-              <h4 className="doTitle">Safety & Protection</h4>
             </div>
+
+           
+            
           </OwlCarousel>
           
         </div>

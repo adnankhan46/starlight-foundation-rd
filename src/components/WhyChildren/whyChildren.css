@@ -1,0 +1,31 @@
+.childrenContent{
+    border: 2px solid green;
+    padding: 120px 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden; 
+}
+
+.childrenContent .section1{
+     border: 2px solid red;
+     text-align: center;
+     padding: 0 10vw 4vh;
+     position: relative;
+}
+.childrenContent .section1::after{
+     position: absolute;
+     content: "ssdss";
+     background-color: #703838c4;
+     
+     height: 100%;
+     width: 100%;
+     z-index: -500;
+}
+.childrenContent .section1 h1{
+     font-size: 2.5rem;
+}
+.childrenContent .section1 p{
+    margin-top: 2em;
+    font-size: 1rem;
+}
