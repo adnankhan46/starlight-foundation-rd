@@ -1,31 +1,212 @@
-.childrenContent{
-    border: 2px solid green;
-    padding: 120px 4vw;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    overflow: hidden; 
+.childrenContent {
+     /* border: 5px solid green; */
+     padding: 120px 4vw;
+     overflow: hidden;
+     height: 50%;
+     position: relative;
+
 }
 
-.childrenContent .section1{
-     border: 2px solid red;
+.childrenContent .img {
+     background-image: url("../../images/home/cover.webp");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     z-index: 1;
+     height: 100vh;
+     position: absolute;
+     top: 0;
+     width: 100%;
+     left: -2px;
+}
+
+.childrenContent::after {
+     position: absolute;
+     content: "";
+     height: 100vh;
+     width: 100%;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.486));
+     top: -117px;
+     left: 0;
+     z-index: 2;
+     top: 0.1rem;
+}
+
+
+.childrenContent .section1 {
+     /* border: 2px solid red; */
      text-align: center;
      padding: 0 10vw 4vh;
      position: relative;
+     text-align: center;
+     z-index: 3;
+     color: white;
+     height: 100vh;
 }
-.childrenContent .section1::after{
-     position: absolute;
-     content: "ssdss";
-     background-color: #703838c4;
-     
-     height: 100%;
-     width: 100%;
-     z-index: -500;
-}
-.childrenContent .section1 h1{
+
+.childrenContent .section1 h1 {
      font-size: 2.5rem;
 }
-.childrenContent .section1 p{
-    margin-top: 2em;
-    font-size: 1rem;
+
+.childrenContent .section1 p {
+     margin-top: 2em;
+     font-size: 1rem;
+}
+
+.childrenContent .section2 {
+     /* border: 2px solid saddlebrown; */
+     padding: 60px 0;
+     text-align: center;
+     margin-top: -90px;
+     z-index: 3;
+}
+
+.childrenContent .section2 .facts{
+     color: #FF9800;
+}
+
+.childrenContent .section2 h1 {
+     font-size: 2rem;
+     margin-bottom: 30px;
+}
+
+/* Owl Carousel Styles */
+.owl-carousel {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+
+/* Single Testimonial Styles */
+.singleDo {
+     padding: 20px;
+     border-radius: 8px;
+     text-align: left;
+     background: #f8f8f8;
+     border-radius: 16px;
+}
+
+.singleDo p {
+     font-size: 1rem;
+     line-height: 1.5;
+     letter-spacing: 0.7px;
+     margin-bottom: 10px;
+}
+
+.singleDo .doTitle {
+     font-size: 1.2rem;
+     font-weight: bold;
+     margin-top: 15px;
+}
+
+.owl-prev,
+.owl-next {
+     font-size: 2rem;
+     color: #333;
+}
+
+/* ############################################# Section 3 */
+
+.childrenContent .section3 {
+     padding: 0 10vw 4vh;
+}
+.childrenContent .section3 i{
+     font-size: 1rem;
+     margin-right: 12px;
+}
+
+.childrenContent .section3 a {
+     font-family: Helvetica, sans-serif;
+     font-size: 0.95rem;
+     background-color: #FF9800;
+     color: white;
+     padding: 18px;
+     border-radius: 6px;
+     font-weight: 600;
+     text-decoration: none;
+     transition: 0.2s ease;
+}
+
+.childrenContent .section3 a:hover {
+     box-shadow: 0 0 0 .3rem rgba(253, 215, 50, .4);
+}
+
+/* ###################################################### Section 4 */
+
+.childrenContent .section4{
+     /* border: 2px solid red; */
+     padding: 30px 0 4vh;
+     border-radius: 14px;
+     text-align: center;
+}
+
+.childrenContent .section4 h1{
+     font-size: 2.5rem;
+     margin: 30px 0;
+}
+
+.childrenContent .section4 .whyItems{
+     /* border: 2px solid red; */
+     padding: 15px 2vw 0vh;
+     text-align: center;
+     display: flex;
+     flex-direction: column;   
+}
+.childrenContent .section4 .whyItems .whyItem{
+     /* border: 2px solid blueviolet; */
+     background: #f8f8f8;
+     border-radius: 16px;
+     display: flex;
+     flex-direction: row;
+     gap: 1rem;
+     margin: 16px 0;
+}
+
+.childrenContent .section4 .whyItems .whyItem .whyItemImage img{
+     width: 100%;
+     align-items: center;
+     border-radius: 16px;
+}
+
+.childrenContent .section4 .whyItems .whyItem .whyItemTexts{
+     display: flex;
+     flex-direction: row;
+     gap: 2rem;
+     margin-top: 20px;
+}
+.childrenContent .section4 .whyItems .whyItem .whyItemTexts .whyItemTitle{
+     font-weight: 700;
+     color: #FF9800;
+     margin-left: 14px;
+
+}
+.childrenContent .section4 .whyItems .whyItem .whyItemTexts .whyItemDesc{
+     text-align: left;
+     margin-left: 14px;
+}
+
+
+/* ############### Responsive */
+@media only screen and (max-width: 768px) {
+    
+     .childrenContent .section4 .whyItems .whyItem{
+          flex-direction: column;
+         
+     }
+     
+.childrenContent .section4 .whyItems .whyItem .whyItemTexts{
+     justify-content: center;
+     flex-direction: column;
+     padding: 20px 0;
+     margin-top: 0px
+}
+}
+
+/*  ########################### Section5 */
+
+.childrenContent .section5{
+     padding: 1px 10vw 0vh;
+     text-align: center;
+     font-size: 1.5rem;
 }

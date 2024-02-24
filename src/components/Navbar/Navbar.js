@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
           <div className="donate-nav">
           
-            <a href="/donate">DONATE</a>
+            <a href="/donate"><i className="fas fa-heart"></i>  DONATE</a>
   </div>
           {/* <div className="navLink hasDropdown">
             <a>Annual Report</a>
@@ -59,7 +59,7 @@ const Navbar = () => {
   </div> */}
         </div>
        {!navbar?  <div className="nav-donate-btn">
-       <a href="/donate">DONATE</a>
+       <a href="/donate"><i className="fas fa-heart"></i> DONATE</a>
 </div>:""}
         <div className="menuHamburger" onClick={() => toggleNav(!navbar)}>
           <i className="fas fa-bars"></i>
