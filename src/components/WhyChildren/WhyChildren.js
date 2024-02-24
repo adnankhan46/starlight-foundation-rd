@@ -13,8 +13,8 @@ function WhyChildren() {
     
     <div className="section1">
     <h1>Why Children</h1>
-      <p>Childrens are the hands ........................................................
-      Children are the building blocks of our nation's future. Let's invest in their potential today, so that they can become our scientists, politicians, sportspeople, journalists and teachers of tomorrow!.....................tommorow and so on</p>
+      <p>
+      Children are the building blocks of our nation's future. Let's invest in their potential today, so that they can become our scientists, politicians, sportspeople, journalists and teachers of tomorrow!</p>
      
       </div>
     
