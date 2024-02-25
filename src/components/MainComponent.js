@@ -4,6 +4,7 @@ import Footer from "./Footer/Footer";
 import Home from "./Home/Home";
 import AboutUs from "./AboutUs/AboutUs";
 import WhyChildren from "./WhyChildren/WhyChildren";
+import Governance from "./Governance/Governance";
 import ContactUs from "./ContactUs/ContactUs";
 import Volunteer from "./Volunteer/Volunteer";
 import Donate from "./Donate/Donate";
@@ -36,6 +37,7 @@ const Main = () => {
         <Route exact path="/home" component={Home} />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/whychildren" component={WhyChildren} />
+        <Route exact path="/governance" component={Governance} />
         <Route exact path="/volunteer" component={Volunteer} />
         <Route exact path="/contactus" component={ContactUs} />
         <Route exact path="/donate" component={Donate} />

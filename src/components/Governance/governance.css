@@ -1,0 +1,98 @@
+.governanceContent{
+    /* border: 6px solid red; */
+    padding: 120px 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.governanceContent .section1{
+    /* border: 6px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.governanceContent .section1 h1{
+    font-size: 2rem;
+}
+.governanceContent .section1 p{
+    font-size: 1.5rem;
+    padding: 2rem 0 3rem 0;
+    text-align: center;
+}
+.governanceContent .section1 ul li{
+    font-size: 1rem;
+    margin: 1rem 2rem;
+}
+
+.governanceContent .governanceImg{
+    /* border: 2px solid green; */
+    margin-top: 2rem;
+    border-radius: 14px;
+    background-image: url("../../images/volunteer/our-core-values.webp"); /* Adjust*/
+    background-repeat: no-repeat;
+    background-size: cover;
+     height: 200px; /* Adjust As Per Required*/
+    width: 100%;     /* Adjust As Per Required*/
+}
+
+/*############################################################### Section 2 */
+.governanceContent .section2{
+    /* border: 2px solid green; */
+    margin-top: 2rem;
+    text-align: center;
+    padding: 70px 15vw 0;
+}
+.governanceContent .section2 h1{
+    font-size: 1.5rem;
+}
+.governanceContent .section2 p{
+    font-size: 1rem;
+    margin: 14px;
+}
+
+.governanceContent .accordion .first-info{
+    width: 100%;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    padding-top: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 12px;
+    
+}
+.governanceContent .accordion .first-info .arrow{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    background-image: url(/static/media/arrow-down-mint.2999d905.svg);
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.governanceContent .accordion .first-info header{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 12px;
+    background-color: #f8f8f8;
+    padding: 2px 5px 20px;
+   
+}
+
+.governanceContent .accordion .first-info .description {
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: -6rem;
+    line-height: 0; /* Initially set line-height to 0 */
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .governanceContent .accordian .first-info.opentab .description {
+    line-height: 40px; /* Set line-height to 40px when the accordion is open */
+  }
+  .governanceContent .accordian{
+    border: 2px solid hotpink;
+  }

@@ -104,7 +104,7 @@ const Donate = () => {
                 compassion.
                 <br />
                 <br />
-                💫Be a part of दिव्य दीपावली 2021. 💫
+                <span>💫</span>Be a part of दिव्य दीपावली 2021. <span>💫</span>
                 <br />
                 <br />
                 Contribute and donate to this purpose and join us for music,
@@ -135,11 +135,11 @@ const Donate = () => {
                 <br />
                 Do give a helping hand to us to fulfill our goal, join hands
                 with us in giving these children a better and healthy life to
-                prosper. ✨
+                prosper. <span>✨</span>
                 <br />
                 <br />
                 Smallest contribution goes a long way. Your support matters.
-                🌸✨
+                <span>🌸✨</span>
               </p>
             </div>
           </Fade>
