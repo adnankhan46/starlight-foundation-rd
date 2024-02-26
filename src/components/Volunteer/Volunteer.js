@@ -65,7 +65,7 @@ const Volunteer = () => {
                         </Fade>
                             {/**Section 2 */}
         <div className="section2">      
-        <h1 className="secondH1">Why Volunteer With <span style={{color:"#ff8900"}}> Starlight </span></h1>
+        <h1 className="">Why Volunteer With <span style={{color:"#ff8900"}}> Starlight </span></h1>
         <p className="longp">This is one of the Simplest way to help out Our Cause. We believe the best way for Our Initiatives to be successful is for community to get involved.
         This is an easy and effcient way to Contribution to the Great Work we do at Starlight Foundation</p>
         
