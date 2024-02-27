@@ -1,7 +1,38 @@
 import React, { useEffect } from "react";
 import "./Donate.css";
 import { Fade } from "react-reveal";
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 
+
+const spanStyle = {
+  padding: '20px',
+  background: '#efefef',
+  color: '#000000'
+}
+
+const divStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  backgroundSize: 'cover',
+  height: '400px',
+  marginTop:"16px"
+}
+const slideImages = [
+  {
+    url: './assets/images/donate/deepawali.png',
+    caption: 'Slide 1'
+  },
+  {
+    url: './assets/images/donate/tarang.png',
+    caption: 'Slide 2'
+  },
+  {
+    url: './assets/images/donate/immunization.webp',
+    caption: 'Slide 3'
+  },
+];
 const Donate = () => {
   const bottomDonate = () => {
     const donateBox = document.querySelector(".bottomDonate");
@@ -26,8 +57,8 @@ const Donate = () => {
           <div className="left">
             <div className="text">
               <Fade left>
-                <h1>EDUCATION, NUTRITION & GOOD HEALTH</h1>
-                <p>Brings out the best in a child.</p>
+                <h1>YOURS SUPPORT MATTERS</h1>
+                <p>Your Small Contribution Can Make a Big Difference in their lives</p>
                 <a
                   href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR"
                   target="_blank"
@@ -45,9 +76,9 @@ const Donate = () => {
         <div className="section section2">
           <Fade up>
             <h2 className="sectionHeading">
-              3,000+ meals served in the last 30 days
+             Choose an Amount to Donate
             </h2>
-            <h4>34,000+ meals served by Starlight Foundation till date</h4>
+            
             <div className="amountsList">
               <a
                 className="singleAmount"
@@ -73,16 +104,48 @@ const Donate = () => {
               >
                 ₹1,500
               </a>
+              <a
+                className="singleAmount"
+                href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Any Other Amount
+              </a>
             </div>
           </Fade>
         </div>
-        {/* <Fade up>
-          <h1 className="heading">Ongoing Campaigns</h1>
-        </Fade> */}
+       
         <Fade up>
-          <h1 className="heading">Our Past Campaigns</h1>
+          <h1 className="heading-long">How Will Our Donate Help?</h1>
         </Fade>
-        <div className="section section3">
+
+        {/** Img Carousel */}
+        <Fade up>
+        <div className="slide-container">
+        <Slide>
+         {slideImages.map((slideImage, index)=> (
+            <div key={index}>
+              <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
+                {/*<span style={spanStyle}>{slideImage.caption}</span>*/}
+              </div>
+            </div>
+          ))} 
+        </Slide>
+      </div>
+      </Fade>
+
+          <ul>
+          <li>Help Prematured and Malnurished babies Survive and Thrive</li>
+          <li>Help to raise awareness regarding the Social Taboos related to Menstrual Hygine</li>
+          <li>Help Children from marginalised communities get Quality Education</li>
+          <li>Help those who are worst effected during emergencies</li>
+          <li>Help to Install Sanitary Pad Disperser Machine in Government School & Colleges Based in Rural Areas</li>
+          </ul>
+        {/** Img Carousel */}
+
+        {/** Section 3 */}
+        {/*<div className="section section3">
           <Fade up>
             <div className="left" style={{ textAlign: "center" }}>
               <img
@@ -210,8 +273,11 @@ const Donate = () => {
               </p>
             </div>
           </Fade>
-        </div>
-        <div className="section section4">
+  </div>*/}
+        {/** Section 3 End*/}
+
+
+       {/* <div className="section section4">
           <Fade up>
             <div className="left">
               <img
@@ -240,9 +306,11 @@ const Donate = () => {
               </p>
             </div>
           </Fade>
-        </div>
+</div>*/}
+
+
         <div className="section section5">
-          <b>Terms & Conditions-</b>
+          <h1>Refund & Cancellations-</h1>
           <br />
           <ul>
             <li>We don't have any refund or cancellations policy.</li>

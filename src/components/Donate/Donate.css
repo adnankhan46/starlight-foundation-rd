@@ -4,6 +4,19 @@
   font-size: 2.5rem;
   margin-top: 70px;
 }
+.donateCont .heading-long {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-top: 70px;
+}
+
+.donateCont ul{
+  padding: 14px 5vh;
+}
+.donateCont ul li{
+  margin: 12px;
+}
 
 .donateCont .section.section1 {
   position: relative;
@@ -101,6 +114,9 @@
   font-size: 1.1rem;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .donateCont .section.section2 .amountsList .singleAmount:hover {
@@ -161,7 +177,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 70px 10vw;
+  margin: 30px 10vw;
+}
+.donateCont .section.section5 h1{
+  font-size: 2rem;
 }
 
 .donateCont .bottomDonate {
@@ -300,7 +319,7 @@
     font-size: 0.9rem;
   }
   .donateCont .section.section5 {
-    margin: 70px 20px;
+    margin: 30px 10vw;
   }
   .donateCont .bottomDonate {
     padding: 15px 10vw;
