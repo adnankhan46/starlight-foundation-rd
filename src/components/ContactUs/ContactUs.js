@@ -107,6 +107,19 @@ const ContactUs = () => {
                         </div>
                     </section>
                 </div>
+                <div className="section section3">
+                <Fade up>
+                    <h2 className="sectionTitle">Contact With Us</h2>
+                    <div className="address">
+                    <h1>Reg. Address</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                    </div>
+                    <div className="address">
+                    <h1>Communication Address</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                    </div>
+                </Fade>
+                </div>
             </div>
         </React.Fragment>
     );

@@ -54,22 +54,32 @@
   margin-top: 1.5em;
   color: #ffffff;
 }
-.donate-btn {
-  border: 2px solid #FF9800;
-  border-radius: 16px;
-  padding: 12px 16px;
-  margin-top: 2em;
+
+
+.homeCont .donate-btn {
+  padding: 30px 10vw 4vh;
+}
+.homeCont .donate-btn i{
   font-size: 1rem;
-  color: white;
-  background: transparent;
-  transition: 0.2s ease-in;
-  cursor: pointer;
-  font-weight: 400;
+  margin-right: 12px;
 }
-.donate-btn:hover {
+
+.homeCont .donate-btn a {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.95rem;
+  background-color: #FF9800;
   color: white;
-  background: #FF9800;
+  padding: 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
 }
+
+.homeCont .donate-btn a:hover {
+  box-shadow: 0 0 0 .3rem rgba(253, 215, 50, .4);
+}
+
 
 .homeCont .section.whatWeDo {
   padding: 70px 12vw;

@@ -32,6 +32,7 @@
     align-items: center; 
 }
 .aboutUsCont .section1 h1.teamphoto{
+    color: #FF9800;
     font-size: 2rem;
     margin-top: 24px;
 }

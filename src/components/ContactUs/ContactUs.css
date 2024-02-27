@@ -10,7 +10,7 @@
   background-position: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr,2);
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 3em;
   justify-items: center;
@@ -121,7 +121,7 @@
 .contactUsCont .section.section1 .right form .inputGroup.items2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr,2);
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
 }
@@ -215,7 +215,7 @@
 
 @media only screen and (max-width: 992px) {
   .contactUsCont .section.section1 {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr,1);
         grid-template-columns: repeat(1, 1fr);
     grid-gap: 3em;
     padding: 15vh 20px 5vh;
@@ -239,7 +239,7 @@
     padding: 15px;
   }
   .contactUsCont .section.section1 .right form .inputGroup.items2 {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr,1);
         grid-template-columns: repeat(1, 1fr);
   }
   .contactUsCont .section.section1 .right form .inputGroup:not(:first-child) {
@@ -251,5 +251,29 @@
   .contactUsCont .section.section2 .sectionTitle {
     font-size: 2rem;
   }
+}
+
+
+.contactUsCont .section.section3 {
+  padding: 70px 15vw 0;
+}
+
+.contactUsCont .section.section3 .sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.contactUsCont .section.section3 .address {
+ display: flex;
+ flex-direction: column;
+ margin: 16px 0;
+ /* border: 2px solid hotpink; */
+ background: #f9f9f9;
+ padding: 14px;
+ border-radius: 16px;
+}
+.contactUsCont .section.section3 .address h1{
+ font-size: 1.5rem;
 }
 /*# sourceMappingURL=ContactUs.css.map */

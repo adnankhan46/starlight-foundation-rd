@@ -60,7 +60,7 @@ const accordionToggle = (index)=>{
               </header>
               {accordion === index && (
                 <a className="description" href={item.description} target="_blank" rel="noopener noreferrer">
-                  {item.title}
+                <i className="fas fa-arrow-right"></i> {item.title}
                 </a>
               )}
             </div>

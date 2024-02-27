@@ -65,7 +65,9 @@ const Home = () => {
                 We, at Starlight Foundation trying to create a long term impact on the lives of thousands of unprivileged childrens by focusing the causes at grass root level. 
                 Donate today and present a Happy & Healthy life to those nourishing buds as it's our responsibility towards the society.
                 </p>
-                <button className="donate-btn">I WANT TO HELP</button>
+                <div className="donate-btn">
+                <a href='/donate'><i className="fas fa-heart"></i>I Want To Help </a>
+                </div>
                 </Fade>
             </div>
           </div>

@@ -53,7 +53,6 @@ const Partner = () => {
 
 
        {/**Section 3 */}
-
       <div className="section3">
       <h1>Testimonials</h1>
                     
