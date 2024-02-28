@@ -337,4 +337,53 @@
     white-space: nowrap;
   }
 }
+
+/* Testimonials */
+
+
+.section6 {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section6 h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Owl Carousel Styles */
+.owl-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Single Testimonial Styles */
+.singleDo {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  background: #f8f8f8;
+  border-radius: 16px;
+}
+
+.singleDo p {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  margin-bottom: 10px;
+}
+
+.singleDo .doTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.owl-prev,
+.owl-next {
+  font-size: 2rem;
+  color: #333;
+}
 /*# sourceMappingURL=Donate.css.map */
