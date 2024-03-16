@@ -6,24 +6,55 @@
     padding: 120px 4vw;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     overflow: hidden;
+    position: relative;
+    height: 50%;
+    gap: 20px;
+}
+
+.aboutUsCont .img {
+    background-image: url("../../images/home/cover.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: -2px;
+}
+.aboutUsCont::after {
+    position: absolute;
+    content: "";
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.486));
+    top: -117px;
+    left: 0;
+    z-index: 2;
+    top: 0.1rem;
 }
 
 
-.aboutUsCont .section1{
+.aboutUsCont .section-main{
     /* border: 2px solid red; */
     text-align: center;
-    padding: 0 10vw 4vh;
+    padding: 0 10vw 4vh; 
+     position: relative;
+     text-align: center;
+     z-index: 3;
+     color: white;
+     height: 100vh;
 }
 
-.aboutUsCont .section1 h1 {
+.aboutUsCont .section-main h1 {
     font-size: 2.5rem;
 }
 
-.aboutUsCont .section1 p {
+.aboutUsCont .section-main p {
     margin-top: 2em;
-    font-size: 1rem;
+    font-size: 1.12rem;
 }
 
 .aboutUsCont .section1 .teamPhoto{
@@ -33,8 +64,9 @@
 }
 .aboutUsCont .section1 h1.teamphoto{
     color: #FF9800;
-    font-size: 2rem;
-    margin-top: 24px;
+    font-size: 2.5rem;
+    margin-top: -88px;
+    text-align: center;
 }
 .aboutUsCont .section1 .teamImg{
     width: 50%;

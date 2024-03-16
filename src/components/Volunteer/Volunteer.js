@@ -7,6 +7,7 @@ import ImageCarousel from "../ImageCarousel/ImageCarousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
+import Typing from "react-typing-animation";
 
 const Volunteer = () => {
     const sendEmail = (e) => {
@@ -23,18 +24,21 @@ const Volunteer = () => {
     return(
         <React.Fragment>
             <div className="volunteerCont">
+            <div className="img"></div>
             
          <div className="section1">
-               <h1>Volunteer</h1>
+               <h1> <Typing hideCursor={true} speed={50}>Volunteer</Typing></h1>
                <p>Volunteer Your Time And Make a True Change</p>
-           
+           </div>
+           <div className="section1" style={{marginTop: -80}}>
                {/** */}
-            <ImageCarousel/>
+            {<ImageCarousel/>}
             {/** */}
 
             <p className="longp">This is one of the Simplest way to help out Our Cause. We believe the best way for Our Initiatives to be successful is for community to get involved.
              This is an easy and effcient way to Contribution to the Great Work we do at Starlight Foundation</p>
-             </div>  
+             </div>
+
         <div className="volunteerImage">
         {/* ####### Developer Message: Put Your desired Image and Style in CSS */}
             <img alt="Volunteer-image" src="./assets/images/volunteer/our-core-values.webp"/>

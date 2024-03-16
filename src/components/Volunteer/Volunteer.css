@@ -1,18 +1,51 @@
 .volunteerCont {
   /* border: 2px solid green; */
-
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    height: 50%;
+    gap: 20px;
+    padding: 16vh 1vw;
+   
+}
+.volunteerCont .img{
+  background-image: url("../../images/home/cover.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: -2px;
+  height: 100vh;
+}
+.volunteerCont::after{
+  position: absolute;
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.486));
+  top: -117px;
+  left: 0;
+  z-index: 2;
+  top: 0.1rem;
 }
 
 .volunteerCont .section1 {
   /* border: 2px solid salmon; */
-  background: white;
-  margin: 120px 0 1vw;
   text-align: center;
-
+     position: relative;
+     z-index: 3;
+     color: rgb(0, 0, 0);
+     height: 100vh;
+     padding: 6vh 0;
 }
 
 .volunteerCont .section1 h1 {
   font-size: 2.5rem;
+  color: white;
 }
 
 .volunteerCont .section1 p {

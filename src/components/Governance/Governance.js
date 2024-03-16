@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./governance.css"
+import Typing from 'react-typing-animation'
 
 function Governance() {
 
@@ -29,11 +30,16 @@ const accordionToggle = (index)=>{
   return (
     <div>
     <div className="governanceContent">
+    <div className="img"></div>
     <div className="section1">
-        <h1>Governance</h1>
+        <h1> <Typing hideCursor={true} speed={50}>Governance</Typing></h1>
         <p>Starlight Foundation is an NGO Registered under Society Registration Act 1973 (Serial No-44). Starlight is a Youth Run and Youth Based Organisation working for Child Welfare. We are
         administrated by a Advisory Board consisting of Highly Authorised Professionals from different fields.</p>
-        
+       
+        </div>
+
+        <div className="section1-a">
+         <h1>Governance</h1>
         <ul>
         <li>Here you will get the details about the legal Status of Starlight foundation.</li>
         <li>Management Body is responsible for Operations Decisions and Ropes functioning of On Field Programme under the Supervision Board Advisory</li>
@@ -66,6 +72,7 @@ const accordionToggle = (index)=>{
             </div>
           ))}
         </div>
+                {/** Testing Divs here*/}
       </div>
 
    

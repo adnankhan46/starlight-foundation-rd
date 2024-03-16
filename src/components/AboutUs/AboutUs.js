@@ -4,21 +4,25 @@ import "./AboutUs.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
+import Typing from "react-typing-animation";
 
 
 const AboutUs = () => {
     return (
         <React.Fragment>
             <div className="aboutUsCont">
+            <div className="img"></div>
+            <div className="section-main">
+            <h1> <Typing hideCursor={true} speed={50}>About Us</Typing></h1>
+            <p> STARLIGHT is a non-profitable organisation established in 2019 with a clear goal to change the
+             lives of unprivileged children in our nation. To strengthen the foundation of a progressive nation
+             by looking forward Illiteracy, Poor health condition due to lack of Proper Nutrition & Social Taboos
+             on Menstrual Hygiene. The main objective is to provide a Happy, Healthy & Safe Live to the
+             underserved children from marginalised geographies and moulding them into a better mobile reformer
+             of the community.
+            </p>
+            </div>
                 <div className="section1">
-                    <h1>About Us</h1>
-                    <p> STARLIGHT is a non-profitable organisation established in 2019 with a clear goal to change the
-                        lives of unprivileged children in our nation. To strengthen the foundation of a progressive nation
-                        by looking forward Illiteracy, Poor health condition due to lack of Proper Nutrition & Social Taboos
-                        on Menstrual Hygiene. The main objective is to provide a Happy, Healthy & Safe Live to the
-                        underserved children from marginalised geographies and moulding them into a better mobile reformer
-                        of the community.
-                    </p>
                     <h1 className="teamphoto">Team Photo</h1>
                     <div className="teamPhoto">
                         <img className="teamImg" src="./assets/images/team/agney.jpg" alt="Team Photo" />

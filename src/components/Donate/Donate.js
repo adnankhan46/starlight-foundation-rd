@@ -53,6 +53,8 @@ const Donate = () => {
     bottomDonate();
   }, []);
 
+  
+
   return (
     <React.Fragment>
       <div className="donateCont">
@@ -124,6 +126,8 @@ const Donate = () => {
         </Fade>
 
         {/** Img Carousel */}
+        <div className="car-container">
+        {/**react-slideshow-cocntainer ka width 56% kardo */}
         <Fade up>
         <div className="slide-container">
         <Slide>
@@ -137,6 +141,7 @@ const Donate = () => {
         </Slide>
       </div>
       </Fade>
+      </div>
 
           <ul>
           <li>Help Prematured and Malnurished babies Survive and Thrive</li>
@@ -398,6 +403,9 @@ const Donate = () => {
                     </OwlCarousel>
                     </div>
       </div>
+
+      {/** */}
+      
     </React.Fragment>
   );
 };

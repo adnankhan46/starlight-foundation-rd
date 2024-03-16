@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com';
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
+import Typing from "react-typing-animation";
 
 const Partner = () => {
     const sendEmail = (e) => {
@@ -32,8 +33,9 @@ const Partner = () => {
     return(
         <React.Fragment>
             <div className="partnerCont">
+            <div className="img"></div>
                 <div className="section1">
-                    <h1>Partner With Us</h1>
+                    <h1> <Typing hideCursor={true} speed={50}>Partner With Us</Typing></h1>
                     <p>Be a part of Our Various Projects and Help Us to Create a long lasting Impact in lives of Children</p>
                 </div>
 

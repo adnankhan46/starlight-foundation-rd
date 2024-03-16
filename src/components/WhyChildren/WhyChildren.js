@@ -4,6 +4,7 @@ import "./whyChildren.css"
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
+import Typing from 'react-typing-animation';
 
 function WhyChildren() {
   return (
@@ -12,7 +13,7 @@ function WhyChildren() {
     <div className="img"></div>
     
     <div className="section1">
-    <h1>Why Children</h1>
+    <h1> <Typing hideCursor={true} speed={50}>Why Children</Typing></h1>
       <p>
       Children are the building blocks of our nation's future. Let's invest in their potential today, so that they can become our scientists, politicians, sportspeople, journalists and teachers of tomorrow!</p>
      
