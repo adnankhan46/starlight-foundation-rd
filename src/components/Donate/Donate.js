@@ -79,47 +79,93 @@ const Donate = () => {
           <div className="right"></div>
         </div>
         <div className="section section2">
-          <Fade up>
-            <h2 className="sectionHeading">
-             Choose an Amount to Donate
-            </h2>
-            
-            <div className="amountsList">
-              <a
-                className="singleAmount"
-                href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=500"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ₹500
-              </a>
-              <a
-                className="singleAmount"
-                href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1000"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ₹1,000
-              </a>
-              <a
-                className="singleAmount"
-                href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ₹1,500
-              </a>
-              <a
-                className="singleAmount"
-                href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Any Other Amount
-              </a>
-            </div>
-          </Fade>
+        <div className="two-form-container">
+        <div className="left-form">
+        <Fade up>
+        <h2 className="sectionHeading">
+         Choose an Amount to Donate
+        </h2>
+        
+        <div className="amountsList">
+          <a
+            className="singleAmount"
+            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ₹500
+          </a>
+          <a
+            className="singleAmount"
+            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1000"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ₹1,000
+          </a>
+          <a
+            className="singleAmount"
+            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ₹1,500
+          </a>
+          <a
+            className="singleAmount"
+            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Any Other Amount
+          </a>
         </div>
+      </Fade></div>
+        <div className="right-form"> <Fade up>
+        <h2 className="sectionHeading">
+         Choose an Amount to Donate
+        </h2>
+        
+        <div className="amountsList">
+          <a
+            className="singleAmount"
+            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ₹500
+          </a>
+          <a
+            className="singleAmount"
+            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1000"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ₹1,000
+          </a>
+          <a
+            className="singleAmount"
+            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ₹1,500
+          </a>
+          <a
+            className="singleAmount"
+            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Any Other Amount
+          </a>
+        </div>
+      </Fade></div>
+        </div>
+         
+        </div>
+
+        
        
         <Fade up>
           <h1 className="heading-long">How Will Our Donate Help?</h1>

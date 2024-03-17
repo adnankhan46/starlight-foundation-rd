@@ -70,16 +70,27 @@
   outline: none;
   cursor: pointer;
 }
-
+          /* ############################# Section 2 */
 .donateCont .section.section2 {
-  margin: 70px 15vw;
+  margin: 60px 6vw;
   padding: 50px;
   background-color: #f8f8f8;
+}
+.donateCont .section.section2 .two-form-container{
+  display: flex;
+  gap: 4%;
+  justify-content: center;
+}
+.donateCont .section.section2 .two-form-container .left-form{
+  border: 2px solid green;
+}
+.donateCont .section.section2 .two-form-container .right-form{
+  border: 2px solid red;
 }
 
 .donateCont .section.section2 .sectionHeading {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -125,7 +136,7 @@
 }
 
 .donateCont .section.section2 .amountsList .singleAmount:not(:first-child) {
-  margin-left: 2em;
+  margin-left: 1em;
 }
 
 .donateCont .section.section3, .donateCont .section.section4 {
@@ -276,6 +287,20 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .donateCont .section.section2 .two-form-container{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .donateCont .section.section2 .two-form-container .right-form{
+    margin-top: 2rem;
+    padding: 10px 35px;
+  }
+  .donateCont .section.section2 .two-form-container .left-form{
+    padding: 10px 35px;
+  }
   .donateCont .heading {
     font-size: 2rem;
   }
