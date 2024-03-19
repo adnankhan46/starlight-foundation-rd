@@ -94,7 +94,7 @@ const Donate = () => {
         </div>
         <div className="section section2">
         <div className="two-form-container">
-        <div className="left=form">
+        <div className="left-form">
         <Fade up>
         <h2 className="sectionHeading">
          Choose an Amount to Donate
