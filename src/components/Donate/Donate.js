@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Donate.css";
 import { Fade } from "react-reveal";
 import { Slide } from 'react-slideshow-image';
@@ -53,6 +53,20 @@ const Donate = () => {
     bottomDonate();
   }, []);
 
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   
 
   return (
@@ -80,7 +94,7 @@ const Donate = () => {
         </div>
         <div className="section section2">
         <div className="two-form-container">
-        <div className="left-form">
+        <div className="left=form">
         <Fade up>
         <h2 className="sectionHeading">
          Choose an Amount to Donate
@@ -121,7 +135,7 @@ const Donate = () => {
           </a>
         </div>
       </Fade></div>
-        <div className="right-form"> <Fade up>
+        <div className={`right-form ${scrollPosition > 820 && 'fixed'}`}> <Fade up>
         <h2 className="sectionHeading">
          Choose an Amount to Donate
         </h2>
@@ -173,7 +187,7 @@ const Donate = () => {
 
         {/** Img Carousel */}
         <div className="car-container">
-        {/**react-slideshow-cocntainer ka width 56% kardo */}
+        {/**react-slideshow-conntainer ka width 56% kardo */}
         <Fade up>
         <div className="slide-container">
         <Slide>
@@ -188,6 +202,7 @@ const Donate = () => {
       </div>
       </Fade>
       </div>
+       {/** Img Carousel Ends */}
 
           <ul>
           <li>Help Prematured and Malnurished babies Survive and Thrive</li>

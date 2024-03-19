@@ -5,17 +5,18 @@
   margin-top: 70px;
 }
 .donateCont .heading-long {
-  text-align: center;
+  text-align: left;
   font-weight: 600;
   font-size: 2.5rem;
   margin-top: 70px;
+  margin-left: 45px;
 }
 
 .donateCont ul{
   padding: 14px 5vh;
 }
 .donateCont ul li{
-  margin: 12px;
+  margin: 12px 16px 12px 12px;
 }
 
 .donateCont .section.section1 {
@@ -83,9 +84,21 @@
 }
 .donateCont .section.section2 .two-form-container .left-form{
   border: 2px solid green;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
 }
 .donateCont .section.section2 .two-form-container .right-form{
   border: 2px solid red;
+  padding: 35px;
+
+}
+.fixed {
+  position: fixed;
+  top: 120px;
+  right: 130px;
+  border: 2px solid green !important;
+
 }
 
 .donateCont .section.section2 .sectionHeading {
@@ -110,12 +123,16 @@
   margin-top: 2em;
 }
 
+.donateCont .section.section2 .amountsList .singleInput {
+  margin: 12px 6px;
+}
+
 .donateCont .section.section2 .amountsList .singleAmount {
   background-color: var(--theme-soft-clr);
   color: var(--theme-clr);
   border: 2px solid var(--theme-clr);
   text-align: center;
-  padding: 10px 35px;
+  padding: 0;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
@@ -137,6 +154,10 @@
 
 .donateCont .section.section2 .amountsList .singleAmount:not(:first-child) {
   margin-left: 1em;
+}
+
+.car-container{
+  width: 50%;
 }
 
 .donateCont .section.section3, .donateCont .section.section4 {
@@ -285,7 +306,7 @@
   background: none;
   color: var(--theme-clr);
 }
-
+/* ################################################## Responsive */
 @media only screen and (max-width: 992px) {
   .donateCont .section.section2 .two-form-container{
     display: flex;
@@ -300,6 +321,9 @@
   }
   .donateCont .section.section2 .two-form-container .left-form{
     padding: 10px 35px;
+  }
+  .car-container{
+    width: 100%;
   }
   .donateCont .heading {
     font-size: 2rem;
