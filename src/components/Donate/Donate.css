@@ -98,7 +98,6 @@
   top: 120px;
   right: 130px;
   border: 2px solid green !important;
-
 }
 
 .donateCont .section.section2 .sectionHeading {
@@ -321,6 +320,9 @@
   }
   .donateCont .section.section2 .two-form-container .left-form{
     padding: 10px 35px;
+  }
+  .fixed {
+    position: static;
   }
   .car-container{
     width: 100%;
