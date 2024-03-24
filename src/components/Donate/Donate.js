@@ -40,25 +40,42 @@ const Donate = () => {
   const bottomDonate = () => {
     const donateBox = document.querySelector(".bottomDonate");
     const section2 = document.querySelector(".section2");
-
+  
+    console.log("donateBox:", donateBox);
+    console.log("section2:", section2);
+  
+    if (!donateBox || !section2) {
+      console.error("One or both elements not found in the DOM.");
+      return;
+    }
+  
     const topPosition = section2.offsetTop + section2.offsetHeight;
-
+  
     window.addEventListener("scroll", (e) => {
       if (window.scrollY >= topPosition) donateBox.classList.add("show");
       else donateBox.classList.remove("show");
     });
   };
+  
 
   useEffect(() => {
     bottomDonate();
   }, []);
 
-
+{/**###################################################### Scrolling and Decreasing height Feature */}
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [maxHeight, setMaxHeight] = useState(511);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState('');
+  
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollPosition(window.scrollY);
+      const currentScrollTop = window.scrollY;
+
+      setScrollDirection(currentScrollTop > lastScrollTop ? 'down' : 'up');
+      setScrollPosition(currentScrollTop);
+      setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -66,8 +83,43 @@ const Donate = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
-  
+  }, [lastScrollTop]);
+
+  useEffect(() => {
+    if (scrollPosition > 2511 && scrollDirection === 'down') {
+      const decrement = 2; // Change the decrement value as per your preference
+      const newHeight = maxHeight - decrement;
+      setMaxHeight(Math.max(0, newHeight));
+    } else if (scrollDirection === 'up') {
+      // Return to normal height when scrolling back up
+      setMaxHeight(356); // Change this value as per your requirement
+    }
+  }, [scrollPosition, scrollDirection, maxHeight]);
+
+  {/**#################################################  FORM */}
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    dob: '',
+    mobile: '',
+    address: '',
+    pincode: '',
+    city: '',
+    state: '',
+    country: '',
+    pan: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here, you can submit formData to a backend or perform any other actions
+    console.log(formData);
+  };
 
   return (
     <React.Fragment>
@@ -97,84 +149,105 @@ const Donate = () => {
         <div className="left-form">
         <Fade up>
         <h2 className="sectionHeading">
-         Choose an Amount to Donate
+         Details
         </h2>
-        
-        <div className="amountsList">
-          <a
-            className="singleAmount"
-            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=500"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ₹500
-          </a>
-          <a
-            className="singleAmount"
-            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1000"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ₹1,000
-          </a>
-          <a
-            className="singleAmount"
-            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ₹1,500
-          </a>
-          <a
-            className="singleAmount"
-            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Any Other Amount
-          </a>
+        <form onSubmit={handleSubmit}>
+        <div className="user-details">
+        <div className="form-group">
+          <label className="details">Full Name</label>
+          <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} placeholder="Enter your Full Name"/>
         </div>
-      </Fade></div>
-        <div className={`right-form ${scrollPosition > 820 && 'fixed'}`}> <Fade up>
+        <div className="form-group">
+          <label className="details">Email</label>
+          <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Enter your Email"/>
+        </div>
+        <div className="form-group">
+          <label className="details">Date of Birth</label>
+          <input type="date" name="dob" value={formData.dob} onChange={handleChange}/>
+        </div>
+        <div className="form-group">
+          <label className="details">Mobile Number</label>
+          <input type="number" name="mobile" value={formData.mobile} onChange={handleChange} placeholder="Enter your Mobile Number"/>
+        </div>
+        <div className="form-group">
+          <label className="details">Address</label>
+          <input type="text" name="address" value={formData.address} onChange={handleChange} placeholder="Enter your Address"/>
+        </div>
+        <div className="form-group">
+          <label className="details">Pincode</label>
+          <input type="text" name="pincode" value={formData.pincode} onChange={handleChange} placeholder="Enter your Pincode"/>
+        </div>
+        <div className="form-group">
+          <label className="details">City</label>
+          <input type="text" name="city" value={formData.city} onChange={handleChange} placeholder="Enter your State"/>
+        </div>
+        <div className="form-group">
+          <label className="details">State</label>
+          <input type="text" name="state" value={formData.state} onChange={handleChange} placeholder="Enter your State" />
+        </div>
+        <div className="form-group">
+          <label className="details">Country</label>
+          <input type="text" name="country" value={formData.country} onChange={handleChange} placeholder="Enter your Country"/>
+        </div>
+        <div className="form-group">
+          <label className="details">PAN Number</label>
+          <input type="text" name="pan" value={formData.pan} onChange={handleChange} placeholder="Enter your PAN Number"/>
+        </div>
+        <button type="submit" className="submutButton">Submit</button>
+        </div>
+      </form>
+        
+      </Fade>
+      </div>
+
+
+        <div className={`right-form ${scrollPosition > 1140 && 'fixed'}`} style={{ maxHeight: `${maxHeight}px` }}> {/** Ht Decr, Step 3 // */} <Fade up>
         <h2 className="sectionHeading">
          Choose an Amount to Donate
         </h2>
         
-        <div className="amountsList">
-          <a
-            className="singleAmount"
-            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=500"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ₹500
-          </a>
-          <a
-            className="singleAmount"
-            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1000"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ₹1,000
-          </a>
-          <a
-            className="singleAmount"
-            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ₹1,500
-          </a>
-          <a
-            className="singleAmount"
-            href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Any Other Amount
-          </a>
+        <div className="payment-buttons-container">
+
+        <div className="amount-list">
+        <a
+        className="payment-button"
+        href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=500"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        ₹500
+        </a>
+        <a
+        className="payment-button"
+        href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        ₹1500
+        </a>
+        <a
+        className="payment-button"
+        href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=2000"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        ₹2000
+        </a>
+        <a
+        className="payment-button"
+        href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am="
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        Other Amount
+        </a>
         </div>
-      </Fade></div>
+        </div>
+          
+        
+      </Fade>
+      </div>
+       
         </div>
          
         </div>
@@ -201,7 +274,7 @@ const Donate = () => {
         </Slide>
       </div>
       </Fade>
-      </div>
+      
        {/** Img Carousel Ends */}
 
           <ul>
@@ -212,6 +285,7 @@ const Donate = () => {
           <li>Help to Install Sanitary Pad Disperser Machine in Government School & Colleges Based in Rural Areas</li>
           <li>Help underprivileged children to secure their future and help them shine</li>
           </ul>
+          </div>
         {/** Img Carousel */}
 
         {/** Section 3 */}
@@ -378,7 +452,7 @@ const Donate = () => {
           </Fade>
 </div>*/}
 
-
+<div className="car-container">
         <div className="section section5">
           <h1>Refund & Cancellations-</h1>
           <br />
@@ -386,10 +460,11 @@ const Donate = () => {
             <li>We don't have any refund or cancellations policy.</li>
           </ul>
         </div>
+        </div>
         {/* <Fade up>
           <div className="upiFloat">UPI Id: starlightfo@upi</div>
         </Fade> */}
-        <div className="bottomDonate">
+       {/* <div className="bottomDonate">
           <h4>Help us serve the needy</h4>
           <div className="amountsList">
             <a
@@ -417,8 +492,9 @@ const Donate = () => {
               ₹1,500
             </a>
           </div>
-        </div>
+      </div>*/}
          {/**Section 3 */}
+      <div className="car-container">
       <div className="section6">
       <h1>Testimonials</h1>
                     
@@ -463,9 +539,10 @@ const Donate = () => {
                       </div>
                     </OwlCarousel>
                     </div>
-      </div>
+      </div> {/** 3rd Car Container Ends */}
 
-      {/** */}
+
+      </div>
       
     </React.Fragment>
   );
