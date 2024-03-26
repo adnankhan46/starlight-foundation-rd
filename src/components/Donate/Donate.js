@@ -223,7 +223,7 @@ const Donate = () => {
         target="_blank"
         rel="noopener noreferrer"
         >
-        ₹1500
+        ₹1000
         </a>
         <a
         className="payment-button"
@@ -231,7 +231,7 @@ const Donate = () => {
         target="_blank"
         rel="noopener noreferrer"
         >
-        ₹2000
+        ₹1500
         </a>
         <a
         className="payment-button"
@@ -260,8 +260,10 @@ const Donate = () => {
 
         {/** Img Carousel */}
         <div className="car-container">
-        {/**react-slideshow-conntainer ka width 56% kardo */}
+
+        
         <Fade up>
+        
         <div className="slide-container">
         <Slide>
          {slideImages.map((slideImage, index)=> (
@@ -453,6 +455,14 @@ const Donate = () => {
 </div>*/}
 
 <div className="car-container">
+        <div className="section section5">
+          <h1>Why Donate?</h1>
+          <br />
+          Your contributions help us serve India's most marginalized children and ensure that they are able to go to school, get proper nutrition and healthcare and stay protected from abuse and exploitation.
+              We cannot do the work that we do without. your support and it'll need each and every one of us to come together to ensure happier
+           childhoods for children everywhere!
+          
+        </div>
         <div className="section section5">
           <h1>Refund & Cancellations-</h1>
           <br />
