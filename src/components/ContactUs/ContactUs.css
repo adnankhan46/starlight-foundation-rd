@@ -276,4 +276,21 @@
 .contactUsCont .section.section3 .address h1{
  font-size: 1.5rem;
 }
+
+.responsive-map{
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border-radius: 16px;
+}
+.responsive-map iframe{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
+  left: 0;
+  top: 0;
+}
+
 /*# sourceMappingURL=ContactUs.css.map */

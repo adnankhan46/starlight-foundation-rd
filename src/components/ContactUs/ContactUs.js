@@ -112,10 +112,19 @@ const ContactUs = () => {
                     <h2 className="sectionTitle">Contact With Us</h2>
                     <div className="address">
                     <h1>Regular Address</h1>
-                    <p>Plot : 11, <br /> Street : 4, <br /> Shakti Vihar, <br /> Risali, <br /> Chhattisgarh- 490006</p>
+                    <p>Plot : 11, Street : 4, Shakti Vihar, Risali, <br /> Chhattisgarh- 490006</p>
+                    </div>
+                    </Fade>
+                    <div className="responsive-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14882.91068739589!2d81.3356517!3d21.1632333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293cabf4ffd205%3A0x6eb984267e24d96c!2sSTARLIGHT%20FOUNDATION!5e0!3m2!1sen!2sin!4v1711462206041!5m2!1sen!2sin"
+                    width="600"
+                    height="450"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Address-Starlight"></iframe>
                     </div>
                     {/** ###############  Map Aayega */}
-                </Fade>
                 </div>
             </div>
         </React.Fragment>
