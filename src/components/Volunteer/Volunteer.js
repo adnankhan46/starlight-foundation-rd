@@ -32,7 +32,7 @@ const Volunteer = () => {
            </div>
            <div className="section1" style={{marginTop: -80}}>
                {/** */}
-            {<ImageCarousel/>}
+            <ImageCarousel/>
             {/** */}
 
             <p className="longp">This is one of the Simplest way to help out Our Cause. We believe the best way for Our Initiatives to be successful is for community to get involved.

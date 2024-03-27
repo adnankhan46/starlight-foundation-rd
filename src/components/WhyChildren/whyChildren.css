@@ -1,6 +1,6 @@
 .childrenContent {
      /* border: 5px solid green; */
-     padding: 120px 4vw;
+     padding: 30px 4vw;
      overflow: hidden;
      height: 50%;
      position: relative;
@@ -37,6 +37,10 @@
      /* border: 2px solid red; */
      text-align: center;
      padding: 0 10vw 4vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
      position: relative;
      text-align: center;
      z-index: 3;
@@ -51,7 +55,7 @@
 .childrenContent .section1 p {
      margin-top: 4rem;
      font-size: 1rem;
-     letter-spacing: 2px;
+     letter-spacing: 0.8px;
      word-spacing: 4px;
 }
 

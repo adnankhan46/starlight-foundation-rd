@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
-
+import { Fade } from "react-reveal";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
@@ -13,6 +13,7 @@ const AboutUs = () => {
             <div className="aboutUsCont">
             <div className="img"></div>
             <div className="section-main">
+            <Fade up>
             <h1> <Typing hideCursor={true} speed={50}>About Us</Typing></h1>
             <p> STARLIGHT is a non-profitable organisation established in 2019 with a clear goal to change the
              lives of unprivileged children in our nation. To strengthen the foundation of a progressive nation
@@ -21,6 +22,7 @@ const AboutUs = () => {
              underserved children from marginalised geographies and moulding them into a better mobile reformer
              of the community.
             </p>
+            </Fade>
             </div>
                 <div className="section1">
                     <h1 className="teamphoto">Team Photo</h1>
