@@ -1,0 +1,60 @@
+
+.section3 {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section3 h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Owl Carousel Styles */
+.owl-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Single Testimonial Styles */
+.singleDo {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    background: #f8f8f8;
+    border-radius: 16px;
+    margin-top: 40px;
+}
+
+.test-img{
+    width: 82px;
+    display: flex;
+    margin: auto;
+    margin-top: -118px;
+    margin-bottom: 10px;
+}
+.test-img img{
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+}
+
+.singleDo p {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    margin-bottom: 10px;
+}
+
+.singleDo .doTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.owl-prev,
+.owl-next {
+    font-size: 2rem;
+    color: #333;
+}
