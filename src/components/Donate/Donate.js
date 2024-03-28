@@ -20,7 +20,8 @@ const divStyle = {
   justifyContent: 'center',
   backgroundSize: 'cover',
   height: '400px',
-  marginTop:"16px"
+  marginTop:"16px",
+  borderRadius: "16px"
 }
 const slideImages = [
   {
@@ -255,7 +256,7 @@ const Donate = () => {
         
        
         <Fade up>
-          <h1 className="heading-long">How Will Our Donate Help?</h1>
+          <h1 className="heading-long">How Will Your Donate Help?</h1>
         </Fade>
 
         {/** Img Carousel */}

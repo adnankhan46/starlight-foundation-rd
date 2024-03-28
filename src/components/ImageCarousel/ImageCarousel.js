@@ -14,6 +14,8 @@ const divStyle = {
   justifyContent: 'center',
   backgroundSize: 'cover',
   height: '400px',
+  borderRadius: "16px",
+  marginBottom: "10px"
 }
 const slideImages = [
   {

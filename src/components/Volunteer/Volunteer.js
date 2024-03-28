@@ -32,14 +32,14 @@ const Volunteer = () => {
                <p>This is one of the simplest way to help out our cause. We believe the best way for our initiatives to be successful is for the community to get involved.
                This is an easy and efficient way of contributing to the great work we do at Starlight Foundation.</p>
            </div>
-           <div className="" style={{marginTop: 30}}>
+           
                {/** */}
             <ImageCarousel/>
             {/** */}
 
             <p className="longp">This is one of the Simplest way to help out Our Cause. We believe the best way for Our Initiatives to be successful is for community to get involved.
              This is an easy and effcient way to Contribution to the Great Work we do at Starlight Foundation</p>
-             </div>
+           
 
         <div className="volunteerImage">
         {/* ####### Developer Message: Put Your desired Image and Style in CSS */}
