@@ -25,16 +25,16 @@ function WhyChildren() {
                       className="owl-theme"
                       nav={false}
                       items={1} 
-                      margin={40}
+                      margin={12}
                       autoplay={true}
-                      autoplayTimeout={2000}
+                      autoplayTimeout={1500}
                       autoplayHoverPause={true}
                       loop={true}
                       dots={true}
                     >
                       {/* Testimonial 1 */}
                       <div className="singleDo">
-                        <div className="testContent singleDo">
+                        <div className="testContent">
                         <p>2 out of 3 child death, below the age of 5 are caused by malnutrition </p>
                           <h4 className="doTitle">UNICEF 2019</h4>
                         </div>
@@ -42,7 +42,7 @@ function WhyChildren() {
               
                       {/* Testimonial 2 */}
                       <div className="singleDo">
-                        <div className="testContent singleDo">
+                        <div className="testContent">
                         <p>33 million child labours go to work instead of school </p>
                           <h4 className="doTitle">CENSUS 2011</h4>
                         </div>
@@ -50,14 +50,14 @@ function WhyChildren() {
               
                       {/* Testimonial 3 */}
                       <div className="singleDo">
-                        <div className="testContent singleDo">
+                        <div className="testContent">
                         <p>2 out of 5 children do not recieve complete immunication </p>
                           <h4 className="doTitle">NFHS 4 2016</h4>
                         </div>
                       </div>
                       {/* Testimonial 4 */}
                       <div className="singleDo">
-                        <div className="testContent singleDo">
+                        <div className="testContent">
                         <p>23 million girls drop out of school annualy after they start their period</p>
                           <h4 className="doTitle">India.com</h4>
                         </div>
