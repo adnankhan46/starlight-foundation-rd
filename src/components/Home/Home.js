@@ -113,7 +113,7 @@ const Home = () => {
               <h4 className="doTitle">Education</h4>
               <div className="hiddenData">
             <p>  Ensuring that children go to school and complete their education</p>
-            <a href='whychildren'>Know More</a>
+            <a href='/whychildren#1st'>Know More</a>
               </div>
             </div>
             <div className="singleDo purple">
@@ -123,7 +123,7 @@ const Home = () => {
               <h4 className="doTitle">Nutrition & Healthcare</h4>
               <div className="hiddenData">
             <p>  Ensuring that children go to school and complete their education</p>
-            <a href='whychildren'>Know More</a>
+            <a href='/whychildren#2nd'>Know More</a>
               </div>
             </div>
 
@@ -134,7 +134,7 @@ const Home = () => {
               <h4 className="doTitle">Menstural Hygine Management</h4>
               <div className="hiddenData">
             <p>  Ensuring that children go to school and complete their education</p>
-            <a href='whychildren'>Know More</a>
+            <a href='/whychildren#3rd'>Know More</a>
               </div>
             </div>
 

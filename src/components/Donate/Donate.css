@@ -73,14 +73,17 @@
 }
           /* ############################# Section 2 */
 .donateCont .section.section2 {
-  margin: 30px 6vw;
+  margin: 0px 6vw;
   padding: 50px;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
+  /* width: 50%; */
+  display: flex;
+  justify-content: end;
 }
 .donateCont .section.section2 .two-form-container{
   display: flex;
   gap: 4%;
-  justify-content: center;
+  justify-content: end;
 }
 .donateCont .section.section2 .two-form-container .left-form{
   /* border: 2px solid green; */
@@ -187,7 +190,7 @@
 /*  */
 .fixed {
   position: fixed;
-  top: 120px;
+  top: 318px;
   right: 60px;
   /* padding: 26px !important; */
   /* border: 2px solid green !important; */

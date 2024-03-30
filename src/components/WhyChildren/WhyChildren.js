@@ -79,10 +79,10 @@ function WhyChildren() {
       <h1>Why Children</h1>
 
       <div className="whyItems">
-          <div className="whyItem">
+          <div className="whyItem" id='1st'>
           <div className="whyItemImage"><img src="./assets/images/volunteer/our-core-values.webp" alt="Children Image" /></div>
             <div className="whyItemTexts">
-              <div className="whyItemTitle">Education</div>
+              <div className="whyItemTitle" >Education</div>
               <div className="whyItemDesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, iste accusantium repella
                dignissimos nulla quibusdam magnam debitis consectetur! Magni ipsa voluptatem nam voluptate illum quo
                 distinctio non rem veniam cupiditate.
@@ -90,7 +90,7 @@ function WhyChildren() {
             </div>
           </div>
 
-          <div className="whyItem">
+          <div className="whyItem" id='2nd'>
           <div className="whyItemImage"><img src="./assets/images/volunteer/our-core-values.webp" alt="Children Image" /></div>
             <div className="whyItemTexts">
               <div className="whyItemTitle">Health and Nutrition</div>
@@ -101,7 +101,7 @@ function WhyChildren() {
             </div>
           </div>
 
-          <div className="whyItem">
+          <div className="whyItem" id='3rd'>
           <div className="whyItemImage"><img src="./assets/images/volunteer/our-core-values.webp" alt="Children Image" /></div>
             <div className="whyItemTexts">
               <div className="whyItemTitle">Menstrual Hygine Management</div>
