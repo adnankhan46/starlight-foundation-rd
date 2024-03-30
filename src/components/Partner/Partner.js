@@ -34,14 +34,14 @@ const Partner = () => {
     return(
         <React.Fragment>
             <div className="partnerCont">
-            <div className="img"></div>
+           {/* <div className="img"></div>
                 <div className="section1">
                     <h1> <Typing hideCursor={true} speed={50}>Partner With Us</Typing></h1>
                     <p>Be a part of Our Various Projects and Help Us to Create a long lasting Impact in lives of Children</p>
                 </div>
 
         <div className="partnerImage">
-        {/* ####### Developer Message: Put Your desired Image and Style in CSS */}
+        
             <img alt="partner-image" src="./assets/images/volunteer/our-core-values.webp"/>
         </div>
 
@@ -53,13 +53,12 @@ const Partner = () => {
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                     </ul>
                 </div>
+    */}
 
-
-       {/**Section 3 */}
-      <Testimonial/>
+       
 
             <div className="old-forms">
-               {/* <div className="section section1">
+               <div className="section section1">
                     <div className="left">
                         <div className="text">
                             <Fade left>
@@ -123,8 +122,10 @@ const Partner = () => {
                             <button type="submit">Submit</button>
                         </form>
                     </Fade>
-    </div>*/}
     </div>
+    </div>
+    {/**########################### Testimonial */}
+    <Testimonial/>
             </div>
         </React.Fragment>
     );

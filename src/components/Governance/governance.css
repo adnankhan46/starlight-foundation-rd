@@ -59,6 +59,8 @@
 }
 .governanceContent .section1-a ul{
     color: #000;
+    margin-top: 45px;
+    /* border: 2px solid saddlebrown; */
 }
 .governanceContent .section1-a ul li{
     font-size: 1rem;

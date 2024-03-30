@@ -1,142 +1,4 @@
-.partnerCont{
-  /* border: 2px solid red; */
-  padding: 30px 4vw;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  height: 50%;
-  gap: 20px;
-}
-.partnerCont .img{
-  background-image: url("../../images/home/cover.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  left: -2px;
-}
-.partnerCont::after{
-  position: absolute;
-  content: "";
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.486));
-  top: -117px;
-  left: 0;
-  z-index: 2;
-  top: 0.1rem;
-}
-
-.partnerCont .section1{
-  /* border: 9px solid green; */
-  margin: 0px 6vw 0vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center; 
-     position: relative;
-     text-align: center;
-     z-index: 3;
-     color: white;
-     height: 100vh;
-}
-.partnerCont .section1 h1{
-  text-align: center;
-  font-size: 2.5rem;
-}
-.partnerCont .section1 p{
-  text-align: center;
-  font-size: 1.4rem;
-  margin: 16px 0;
-}
-.partnerImage{
-  /* border: 4px solid hotpink; */
-  display: flex;
-  align-items: center;
-  margin: 15px 2px;
-  margin-top: 52px;
-}
-.partnerImage img{
-  width: 60%;
-  border-radius: 6px;
-  height: 200px;
-  margin: auto;
-}
-/*  Section 2 */
-
-.partnerCont .section2{
-  /* border: 9px solid green; */
-  margin: 0px 6vw 0vh;
-  border-radius: 14px;
-  padding: 10px;
-}
-.partnerCont .section2 h1{
-  text-align: center;
-  font-size: 2.5rem;
-}
-.partnerCont .section2 ul{
-  margin-top: 2rem;
-}
-.partnerCont .section2 li{
-  margin: 0.8rem 2vh;
-}
-
-/*  Section 3 */
-
-.section3 {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.section3 h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-/* Owl Carousel Styles */
-.owl-carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-/* Single Testimonial Styles */
-.singleDo {
-  padding: 20px;
-  border-radius: 8px;
-  text-align: left;
-  background: #f8f8f8;
-  border-radius: 16px;
-}
-
-.singleDo p {
-  font-size: 1rem;
-  line-height: 1.5;
-  letter-spacing: 0.7px;
-  margin-bottom: 10px;
-}
-
-.singleDo .doTitle {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-.owl-prev,
-.owl-next {
-  font-size: 2rem;
-  color: #333;
-}
-
-/* .partnerCont .section.section1 {
+ .partnerCont .section.section1 {
   position: relative;
   height: 100vh;
   background-image: url("../../images/partner/cover.webp");
@@ -221,7 +83,7 @@
 .partnerCont .section.section2 form .inputGroup, .partnerCont .section.section3 form .inputGroup {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
+  -ms-grid-columns: (1fr,1);
       grid-template-columns: repeat(1, 1fr);
   grid-gap: 4em 3em;
   margin-top: 1.2em;
@@ -242,7 +104,7 @@
 }
 
 .partnerCont .section.section2 form .inputGroup.twoInputs, .partnerCont .section.section3 form .inputGroup.twoInputs {
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr,2);
       grid-template-columns: repeat(2, 1fr);
 }
 
@@ -280,8 +142,8 @@
     margin-top: 1.2em;
   }
   .partnerCont .section.section2 form .inputGroup.twoInputs, .partnerCont .section.section3 form .inputGroup.twoInputs {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr,1);
         grid-template-columns: repeat(1, 1fr);
   }
-} */
+} 
 /*# sourceMappingURL=Partner.css.map */

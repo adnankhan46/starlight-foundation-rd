@@ -5,6 +5,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
 import Typing from 'react-typing-animation';
+import { Fade } from 'react-reveal';
 
 function WhyChildren() {
   return (
@@ -13,10 +14,12 @@ function WhyChildren() {
     <div className="img"></div>
     
     <div className="section1">
+    <Fade up>
     <h1> <Typing hideCursor={true} speed={50}>Why Children</Typing></h1>
-      <p>
-      Children are the building blocks of our nation's future. Let's invest in their potential today, so that they can become our scientists, politicians, sportspeople, journalists and teachers of tomorrow!</p>
-     
+    <p>
+    Children are the building blocks of our nation's future. Let's invest in their potential today, so that they can become our scientists, politicians, sportspeople, journalists and teachers of tomorrow!</p>
+    </Fade>
+    
       </div>
     
       <div className="section2">

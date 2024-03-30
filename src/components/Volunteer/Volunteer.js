@@ -28,9 +28,10 @@ const Volunteer = () => {
             <div className="img"></div>
             
          <div className="section1">
-               <h1> <Typing hideCursor={true} speed={50}>Volunteer your Time and Make a True Change</Typing></h1>
+              <Fade up><Typing hideCursor={true} speed={50}> <h1> Volunteer your Time and Make a True Change</h1></Typing>
                <p>This is one of the simplest way to help out our cause. We believe the best way for our initiatives to be successful is for the community to get involved.
                This is an easy and efficient way of contributing to the great work we do at Starlight Foundation.</p>
+               </Fade>
            </div>
            
                {/** */}
