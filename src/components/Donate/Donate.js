@@ -177,8 +177,10 @@ useEffect(() => {
         </div>
         <div className="section section2">
         {/* ##################################################################################### Form RIGHT*/}
-         <div className="">
-                <div className={`hero ${scrollPosition > 700 && 'right-form-fix'}`}>
+         
+        <div className={`${window.innerWidth <= 992 ? 'bg-for-mobile-res': ""}`}>
+        
+                <div className={`${window.innerWidth >= 992? 'hero': ''} ${scrollPosition > 700 && window.innerWidth >= 992 ? 'right-form-fix': ""}`}>
         <div className="form-box">
           <div className="button-box">
             <div id="btn" style={btnStyle}></div>
@@ -391,12 +393,12 @@ useEffect(() => {
         
        
        
+        
+        {/** Img Carousel */}
+        <div className="car-container">
         <Fade up>
           <h1 className="heading-long">How Will Your Donate Help?</h1>
         </Fade>
-
-        {/** Img Carousel */}
-        <div className="car-container">
        
         
         <Fade up>
