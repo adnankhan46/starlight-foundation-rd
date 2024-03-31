@@ -5,7 +5,6 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
 import Testimonial from "../Testimonial/Testimonial";
-import FormToDonate from "../FormToDonate/FormToDonate";
 
 
 const divStyle = {
@@ -57,41 +56,23 @@ const Donate = () => {
     bottomDonate();
   }, []);
 
-{/**###################################################### Scrolling and Decreasing height Feature */}
-  // const [scrollPosition, setScrollPosition] = useState(0);
-  // const [maxHeight, setMaxHeight] = useState(511);
-  // const [lastScrollTop, setLastScrollTop] = useState(0);
-  // const [scrollDirection, setScrollDirection] = useState('');
+{/**###################################################### Scrolling Feature */}
+const [scrollPosition, setScrollPosition] = useState(0);
+
+useEffect(() => {
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
   
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const currentScrollTop = window.scrollY;
-
-  //     setScrollDirection(currentScrollTop > lastScrollTop ? 'down' : 'up');
-  //     setScrollPosition(currentScrollTop);
-  //     setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, [lastScrollTop]);
-
-  // useEffect(() => {
-  //   if (scrollPosition > 2511 && scrollDirection === 'down') {
-  //     const decrement = 2; 
-  //     const newHeight = maxHeight - decrement;
-  //     setMaxHeight(Math.max(0, newHeight));
-  //   } else if (scrollDirection === 'up') {
-  //     // Return to normal height when scrolling back up
-  //     setMaxHeight(356);
-  //   }
-  // }, [scrollPosition, scrollDirection, maxHeight]);
-
-  {/**#################################################  FORM */}
+  {/**######################################################################  FORM LEFT */}
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -109,12 +90,68 @@ const Donate = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+  
+  
+  {/**######################################################################  FORM RIGHT */}
+  const [isLogin, setIsLogin] = useState(true);
+  const [showTnC, setShowTnC] = useState(false);
+  const [isRegistered, setIsRegistered] = useState(false);
+  const [btnStyle, setBtnStyle] = useState({
+      left: '0',
+      background: 'linear-gradient(to right, #ff9800, #ff9800)'
+    });
+  const [formPositions, setFormPositions] = useState({
+    login: { left: '50px', top: '140px' },
+    register: { left: '450px', top: '100px' }
+  });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
+  const handleToggle = () => {
+    setIsLogin(!isLogin);
+    setFormPositions({
+      login: { left: isLogin ? '-400px' : '50px', top: '140px' },
+      register: { left: isLogin ? '50px' : '450px', top: '139px' }
+    });
+    if (isLogin) {
+      setBtnStyle({
+        left: '110px',
+        background: 'linear-gradient(to left, #ff9800, #ff9800)'
+      });
+    } else {
+      setBtnStyle({
+        left: '0',
+        background: 'linear-gradient(to right, #ff9800, #ff9800)'
+      });
+    }
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+   
+    if (isLogin) {
+      console.log('Logging in...');
+    } else {
+      console.log('Registering...');
+     
+      setIsRegistered(true);
+      setTimeout(() => {
+        setIsRegistered(false);
+      }, 3000);
+    }
+  };
+
+  const handleTnCClick = () => {
+    setShowTnC(true);
+  };
+
+  const handleTnCMouseUp = (event) => {
+    if (
+      event.target.id === 'TnC' ||
+      event.target.parentNode.id === 'TnC'
+    ) {
+      setShowTnC(false);
+    }
+  };
+  
   return (
     <React.Fragment>
       <div className="donateCont">
@@ -139,10 +176,131 @@ const Donate = () => {
           <div className="right"></div>
         </div>
         <div className="section section2">
-         <div>
-                <FormToDonate />
+        {/* ##################################################################################### Form RIGHT*/}
+         <div className="">
+                <div className={`hero ${scrollPosition > 700 && 'right-form-fix'}`}>
+        <div className="form-box">
+          <div className="button-box">
+            <div id="btn" style={btnStyle}></div>
+            <button
+              type="button"
+              className="toggle-btn"
+              onClick={handleToggle}
+              style={{ marginRight: '10px' }}
+            >
+            Monthly
+            </button>
+            <button
+              type="button"
+              className="toggle-btn"
+              onClick={handleToggle}
+            >
+              Annualy
+            </button>
+          </div>
+  
+          <form
+            id="login"
+            className="input-group"
+            style={{ left: formPositions.login.left, top: formPositions.login.top }}
+            onSubmit={handleSubmit}
+          >
+          <a
+        className="payment-button"
+        href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=500"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        ₹500
+        </a>
+        <a
+        className="payment-button"
+        href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=1500"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        ₹1500
+        </a>
+        <a
+        className="payment-button"
+        href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=2000"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        ₹2000
+        </a>
+        <a
+        className="payment-button"
+        href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am="
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        Enter Other Amount
+        </a>
+          </form>
+  
+          <form
+            id="register"
+            className="input-group"
+            style={{ left: formPositions.register.left, top: formPositions.register.top }}
+            onSubmit={handleSubmit}
+          >
+          <a
+          className="payment-button"
+          href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=5000"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          ₹5,000
+          </a>
+          <a
+          className="payment-button"
+          href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=15000"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          ₹15,000
+          </a>
+          <a
+          className="payment-button"
+          href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am=20000"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          ₹20,000
+          </a>
+          <a
+          className="payment-button"
+          href="upi://pay?pa=starlightfo@upi&pn=StarlightFoundation&cu=INR&am="
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          Enter Other Amount
+          </a>
+          </form>
+  
+          {showTnC && (
+            <div
+              id="TnC"
+              onMouseUp={handleTnCMouseUp}
+              onTouchEnd={handleTnCMouseUp}
+            >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat,
+                quisquam odio. Corrupti voluptate debitis error, soluta dolor ratione
+                eos, ab nulla, voluptatum cumque adipisci illum odit labore ea nam
+                eligendi.
+              </p>
             </div>
-        <FormToDonate/>
+          )}
+  
+          {isRegistered && <p>Registered!</p>}
+        </div>
+      </div>
+
+                </div>
+        {/* ##################################################################################### Form RIGHT*/}
+       
         {/*<div className="two-form-container"></div>*/}
         {/*<div className="left-form">
         <Fade up>
