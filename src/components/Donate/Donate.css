@@ -84,9 +84,6 @@
   justify-content: end;
 }
 
-.donateCont .section.section2 .good {
-  border: 2px solid red;
-}
 
 .donateCont .section.section2 .two-form-container {
   display: flex;
@@ -191,6 +188,7 @@
 
 .payment-button:hover {
   background-color: #cf7d02;
+  color: white;
 }
 
 .payment-button:last-child {
